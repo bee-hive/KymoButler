@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     53262,       1267]
-NotebookOptionsPosition[     49996,       1205]
-NotebookOutlinePosition[     50417,       1222]
-CellTagsIndexPosition[     50374,       1219]
+NotebookDataLength[     76800,       1719]
+NotebookOptionsPosition[     73003,       1645]
+NotebookOutlinePosition[     73424,       1662]
+CellTagsIndexPosition[     73381,       1659]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -60,10 +60,10 @@ Cell[BoxData[
  CellLabel->"In[1]:=",ExpressionUUID->"4c09cc81-6789-4877-92cd-7752b83d4c52"],
 
 Cell[BoxData["\<\"KymoButler packages loaded successfully.\"\>"], "Print",
- CellChangeTimes->{3.9755920668655376`*^9},
+ CellChangeTimes->{3.9756009296390247`*^9},
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"c8154190-4a69-4810-8d77-4cea139a3bcd"]
+In[1]:=",ExpressionUUID->"88a70517-e922-49b8-96de-201e796feb3c"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -114,31 +114,31 @@ is correctly set up.\>\"", "]"}], ";", "\n", " ",
 
 Cell[BoxData["\<\"Loading pre-trained models on master kernel...\"\>"], \
 "Print",
- CellChangeTimes->{3.975592115910383*^9},
+ CellChangeTimes->{3.9756009356111183`*^9},
  CellLabel->
   "During evaluation of \
-In[5]:=",ExpressionUUID->"4b5f433b-1be4-4654-87ee-14a0df9716ba"],
+In[5]:=",ExpressionUUID->"468b4fe2-0a84-4266-8fb5-538dc2065d7b"],
 
 Cell[BoxData[
  TemplateBox[{
   "CreateDirectory", "eexist", 
    "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"/Users/aweiner/beehive/lab/adamw/\
 KymoButler/models\\\\\\\"\\\"}]\\) already exists.\"", 2, 6, 1, 
-   29392801815248834973, "Local"},
+   29392859847926699058, "Local"},
   "MessageTemplate",
   BaseStyle->"MSG"]], "Message",
- CellChangeTimes->{3.975592115960689*^9},
+ CellChangeTimes->{3.9756009356625223`*^9},
  CellLabel->
   "During evaluation of \
-In[5]:=",ExpressionUUID->"114c7592-974b-4781-b78f-39d6279422f6"],
+In[5]:=",ExpressionUUID->"67519a85-d013-4141-bbef-47da25932373"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData["\<\"Models loaded successfully.\"\>"], "Print",
- CellChangeTimes->{3.9755921732144947`*^9},
+ CellChangeTimes->{3.9756009363935013`*^9},
  CellLabel->
   "During evaluation of \
-In[5]:=",ExpressionUUID->"7974124d-ea4b-416d-8c1b-706e930abfd0"],
+In[5]:=",ExpressionUUID->"50415e67-7a0d-474b-a8e2-48c22ec102d9"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -149,10 +149,10 @@ Cell[BoxData[
   SequenceForm[
   "Available models: ", {"binet", "classnet", "uninet", "decnet"}],
   Editable->False]], "Print",
- CellChangeTimes->{3.975592173216098*^9},
+ CellChangeTimes->{3.9756009363946457`*^9},
  CellLabel->
   "During evaluation of \
-In[5]:=",ExpressionUUID->"5b5a4130-f239-47a8-b35d-807c72621981"]
+In[5]:=",ExpressionUUID->"f2486e5a-8abf-4533-9584-16d5547e6fe2"]
 }, Open  ]]
 }, Open  ]],
 
@@ -198,7 +198,7 @@ kymographs/250310_D10/processed_on_20251024\>\""}], ";"}], "\n",
    RowBox[{
     RowBox[{"wellIDs", " ", "=", " ", 
      RowBox[{"{", 
-      RowBox[{"\"\<B02\>\"", ",", " ", "\"\<B03\>\""}], "}"}]}], ";"}], "   ", 
+      RowBox[{"\"\<B06\>\"", ",", " ", "\"\<B07\>\""}], "}"}]}], ";"}], "   ", 
    RowBox[{"(*", " ", 
     RowBox[{"<", 
      RowBox[{
@@ -273,21 +273,29 @@ kymographs/250310_D10/processed_on_20251024\>\""}], ";"}], "\n",
            RowBox[{"\"\<*.png\>\"", ",", " ", "dir"}], "]"}], ",", "\n", 
           "    ", 
           RowBox[{
-           RowBox[{"With", "[", 
+           RowBox[{"With", "[", "\n", "      ", 
             RowBox[{
-             RowBox[{"{", 
-              RowBox[{"len", " ", "=", " ", 
-               RowBox[{"StringCases", "[", 
-                RowBox[{"#", ",", " ", 
-                 RowBox[{
-                  RowBox[{"\"\<len_\>\"", " ", "~~", " ", 
-                   RowBox[{"x", ":", "NumberString"}]}], " ", ":>", " ", 
-                  RowBox[{"ToExpression", "[", "x", "]"}]}]}], "]"}]}], "}"}],
-              ",", "\n", "      ", 
+             RowBox[{"{", "\n", "        ", 
+              RowBox[{
+               RowBox[{"base", " ", "=", " ", 
+                RowBox[{"FileNameTake", "[", "#", "]"}]}], ",", "\n", 
+               "        ", 
+               RowBox[{"len", " ", "=", " ", 
+                RowBox[{"StringCases", "[", 
+                 RowBox[{"#", ",", " ", 
+                  RowBox[{
+                   RowBox[{"\"\<len_\>\"", " ", "~~", " ", 
+                    RowBox[{"x", ":", "NumberString"}]}], " ", ":>", " ", 
+                   RowBox[{"ToExpression", "[", "x", "]"}]}]}], "]"}]}]}], 
+              "\n", "      ", "}"}], ",", "\n", "      ", 
              RowBox[{
+              RowBox[{"!", 
+               RowBox[{"StringStartsQ", "[", 
+                RowBox[{"base", ",", " ", "\"\<._\>\""}], "]"}]}], " ", "&&", 
+              "\n", "      ", 
               RowBox[{
                RowBox[{"Length", "[", "len", "]"}], " ", ">", " ", "0"}], " ",
-               "&&", " ", 
+               "&&", "\n", "      ", 
               RowBox[{
                RowBox[{"Last", "[", "len", "]"}], " ", ">", " ", 
                "minLen"}]}]}], "\n", "    ", "]"}], " ", "&"}]}], "\n", "  ", 
@@ -328,7 +336,9 @@ kymographs/250310_D10/processed_on_20251024\>\""}], ";"}], "\n",
    3.975523677393091*^9, 3.975523680387887*^9}, {3.975525141918971*^9, 
    3.975525150269004*^9}, {3.975588459282461*^9, 3.9755885842055264`*^9}, {
    3.975588716182225*^9, 3.9755887174239492`*^9}, {3.975590934497426*^9, 
-   3.9755909356096*^9}, {3.9755911027355223`*^9, 3.975591103842938*^9}},
+   3.9755909356096*^9}, {3.9755911027355223`*^9, 3.975591103842938*^9}, {
+   3.9755995117307577`*^9, 3.975599514709248*^9}, 3.975600252285529*^9, {
+   3.975600801328064*^9, 3.975600804335446*^9}},
  CellLabel->"In[10]:=",ExpressionUUID->"dff84555-3aa1-455a-8776-d2f17fc6c998"],
 
 Cell[CellGroupData[{
@@ -344,20 +354,20 @@ Cell[BoxData[
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250310_\
 D10/processed_on_20251024/kymobutler_outputs"],
   Editable->False]], "Print",
- CellChangeTimes->{3.9755921846322603`*^9},
+ CellChangeTimes->{3.975600941072323*^9},
  CellLabel->
   "During evaluation of \
-In[10]:=",ExpressionUUID->"c5851644-a2cf-4710-bcc1-8c8eeb9bc8f8"],
+In[10]:=",ExpressionUUID->"f1beb761-e888-4105-81a6-447cda9a53ed"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Total files selected: \"\>", "\[InvisibleSpace]", "78"}],
-  SequenceForm["Total files selected: ", 78],
+  RowBox[{"\<\"Total files selected: \"\>", "\[InvisibleSpace]", "81"}],
+  SequenceForm["Total files selected: ", 81],
   Editable->False]], "Print",
- CellChangeTimes->{3.975592184798504*^9},
+ CellChangeTimes->{3.975600941273532*^9},
  CellLabel->
   "During evaluation of \
-In[10]:=",ExpressionUUID->"88b66682-69e0-42dd-8132-b9544bba5ad3"]
+In[10]:=",ExpressionUUID->"4c75916d-2043-4a48-8199-b95d762e8745"]
 }, Open  ]]
 }, Open  ]],
 
@@ -366,58 +376,117 @@ Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{
-   RowBox[{"allResults", " ", "=", " ", 
-    RowBox[{"Table", "[", "\n", "  ", 
-     RowBox[{
-      RowBox[{"Module", "[", 
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{"importedImage", ",", " ", "result"}], "}"}], ",", "\n", 
-        "    ", 
-        RowBox[{
-         RowBox[{"importedImage", " ", "=", " ", 
-          RowBox[{"Import", "[", 
-           RowBox[{"allSelectedFiles", "[", 
-            RowBox[{"[", "i", "]"}], "]"}], "]"}]}], ";", "\n", "\n", "    ", 
-         
-         RowBox[{"result", " ", "=", " ", 
-          RowBox[{"BiKymoButler", "[", "\n", "      ", 
-           RowBox[{
-           "importedImage", ",", "\n", "      ", "0.2", ",", 
-            "                 ", 
-            RowBox[{"(*", " ", 
-             RowBox[{"Detection", " ", "Threshold"}], " ", "*)"}], "\n", 
-            "      ", "0.5", ",", "                 ", 
-            RowBox[{"(*", " ", 
-             RowBox[{
-              RowBox[{"Decision", " ", "Threshold"}], " ", "-", " ", 
-              RowBox[{"do", " ", "not", " ", "change"}]}], " ", "*)"}], "\n", 
-            "      ", "\"\<CPU\>\"", ",", "               ", 
-            RowBox[{"(*", " ", 
-             RowBox[{"Target", " ", "Device", " ", 
-              RowBox[{"(", 
-               RowBox[{"\"\<GPU\>\"", " ", "or", " ", "\"\<CPU\>\""}], 
-               ")"}]}], " ", "*)"}], "\n", "      ", 
-            RowBox[{"models", "[", "\"\<binet\>\"", "]"}], ",", "\n", 
-            "      ", 
-            RowBox[{"models", "[", "\"\<decnet\>\"", "]"}], ",", "\n", 
-            "      ", "10", ",", "                  ", 
-            RowBox[{"(*", " ", 
-             RowBox[{"Minimum", " ", "Particle", " ", "Size"}], " ", "*)"}], 
-            "\n", "      ", "3"}], "                    ", 
-           RowBox[{"(*", " ", 
-            RowBox[{"Minimum", " ", "Frame", " ", "Number"}], " ", "*)"}], 
-           "\n", "    ", "]"}]}], ";", "\n", "\n", "    ", "result"}]}], "\n",
-        "  ", "]"}], ",", "\n", "  ", 
-      RowBox[{"{", 
-       RowBox[{"i", ",", " ", 
-        RowBox[{"Length", "[", "allSelectedFiles", "]"}]}], "}"}]}], "\n", 
-     "]"}]}], ";"}], "\n"}], "\n", 
+   RowBox[{"failedFiles", " ", "=", " ", 
+    RowBox[{"{", "}"}]}], ";"}], "\n"}], "\n", 
  RowBox[{
-  RowBox[{"Print", "[", 
-   RowBox[{"\"\<Done running bidirectional kymobutler on \>\"", ",", " ", 
-    RowBox[{"Length", "[", "allSelectedFiles", "]"}], ",", 
-    " ", "\"\< kymographs\>\""}], "]"}], ";"}]}], "Code",
+  RowBox[{
+   RowBox[{"allResults", " ", "=", "\n", "  ", 
+    RowBox[{"Monitor", "[", "\n", "    ", 
+     RowBox[{
+      RowBox[{"Table", "[", "\n", "      ", 
+       RowBox[{
+        RowBox[{"Module", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"importedImage", ",", " ", "result", ",", " ", "file"}], 
+           "}"}], ",", "\n", "        ", 
+          RowBox[{
+           RowBox[{"file", " ", "=", " ", 
+            RowBox[{"allSelectedFiles", "[", 
+             RowBox[{"[", "i", "]"}], "]"}]}], ";", "\n", "\n", "        ", 
+           RowBox[{"result", " ", "=", "\n", "          ", 
+            RowBox[{"TimeConstrained", "[", "\n", "            ", 
+             RowBox[{
+              RowBox[{"Quiet", " ", "@", " ", 
+               RowBox[{"Check", "[", "\n", "              ", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"importedImage", " ", "=", " ", 
+                   RowBox[{"Import", "[", "file", "]"}]}], ";", "\n", "\n", 
+                  "              ", 
+                  RowBox[{"BiKymoButler", "[", "\n", "                ", 
+                   RowBox[{
+                   "importedImage", ",", "\n", "                ", "0.2", ",",
+                     "                 ", 
+                    RowBox[{"(*", " ", 
+                    RowBox[{"Detection", " ", "Threshold"}], " ", "*)"}], 
+                    "\n", "                ", "0.5", ",", "                 ", 
+                    RowBox[{"(*", " ", 
+                    RowBox[{"Decision", " ", "Threshold"}], " ", "*)"}], "\n",
+                     "                ", "\"\<CPU\>\"", ",", "\n", 
+                    "                ", 
+                    RowBox[{"models", "[", "\"\<binet\>\"", "]"}], ",", "\n", 
+                    "                ", 
+                    RowBox[{"models", "[", "\"\<decnet\>\"", "]"}], ",", "\n",
+                     "                ", "10", ",", "\n", "                ", 
+                    "3"}], "\n", "              ", "]"}]}], ",", "\n", 
+                 "              ", "$Failed"}], "                ", 
+                RowBox[{"(*", " ", 
+                 RowBox[{
+                  RowBox[{"catches", " ", "recursion"}], " ", "+", " ", 
+                  RowBox[{"other", " ", "errors"}]}], " ", "*)"}], "\n", 
+                "            ", "]"}]}], ",", "\n", "            ", "60", ",",
+               "                      ", 
+              RowBox[{"(*", " ", 
+               RowBox[{"timeout", " ", "in", " ", "seconds"}], " ", "*)"}], 
+              "\n", "            ", "$TimedOut"}], "\n", "          ", 
+             "]"}]}], ";", "\n", "\n", "        ", 
+           RowBox[{"Which", "[", "\n", "          ", 
+            RowBox[{
+             RowBox[{"result", " ", "===", " ", "$TimedOut"}], ",", "\n", 
+             "            ", 
+             RowBox[{
+              RowBox[{"AppendTo", "[", 
+               RowBox[{"failedFiles", ",", " ", "file"}], "]"}], ";", "\n", 
+              "            ", 
+              RowBox[{"Missing", "[", "\"\<TimedOut\>\"", "]"}]}], ",", "\n", 
+             "\n", "          ", 
+             RowBox[{"result", " ", "===", " ", "$Failed"}], ",", "\n", 
+             "            ", 
+             RowBox[{
+              RowBox[{"AppendTo", "[", 
+               RowBox[{"failedFiles", ",", " ", "file"}], "]"}], ";", "\n", 
+              "            ", 
+              RowBox[{"Missing", "[", "\"\<Failed\>\"", "]"}]}], ",", "\n", 
+             "\n", "          ", "True", ",", "\n", "            ", 
+             "result"}], "\n", "        ", "]"}]}]}], "\n", "      ", "]"}], ",",
+         "\n", "      ", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", " ", 
+          RowBox[{"Length", "[", "allSelectedFiles", "]"}]}], "}"}]}], "\n", 
+       "    ", "]"}], ",", "\n", "    ", 
+      RowBox[{"Column", "[", 
+       RowBox[{"{", "\n", "      ", 
+        RowBox[{
+         RowBox[{"Style", "[", 
+          
+          RowBox[{"\"\<Running BiKymoButler on kymographs\>\"", ",", " ", 
+           "Bold"}], "]"}], ",", "\n", "      ", 
+         RowBox[{"ProgressIndicator", "[", 
+          RowBox[{"i", ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", " ", 
+             RowBox[{"Length", "[", "allSelectedFiles", "]"}]}], "}"}]}], 
+          "]"}], ",", "\n", "      ", 
+         RowBox[{"Row", "[", 
+          RowBox[{"{", 
+           
+           RowBox[{"\"\<File \>\"", ",", " ", "i", ",", " ", "\"\< of \>\"", ",",
+             " ", 
+            RowBox[{"Length", "[", "allSelectedFiles", "]"}]}], "}"}], "]"}], 
+         ",", "\n", "      ", 
+         RowBox[{"FileNameTake", " ", "@", " ", 
+          RowBox[{"allSelectedFiles", "[", 
+           RowBox[{"[", "i", "]"}], "]"}]}]}], "\n", "    ", "}"}], "]"}]}], 
+     "\n", "  ", "]"}]}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", "\"\<Done running BiKymoButler\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Print", "[", 
+    RowBox[{"\"\<Failed files: \>\"", ",", " ", 
+     RowBox[{"Length", "[", "failedFiles", "]"}]}], "]"}], ";"}], 
+  "\n"}], "\n"}], "Code",
  CellChangeTimes->{
   3.974900729908243*^9, {3.9749007741134977`*^9, 3.9749007773839703`*^9}, {
    3.974904812603591*^9, 3.974904815079691*^9}, 3.974998707472033*^9, 
@@ -425,22 +494,34 @@ Cell[BoxData[{
    3.975074244455614*^9, 3.975074267416767*^9}, {3.975076916354075*^9, 
    3.9750769174423237`*^9}, {3.975091183951395*^9, 3.975091225093617*^9}, 
    3.9755081433166656`*^9, 3.975508272922826*^9, {3.975525173574356*^9, 
-   3.975525227334455*^9}},
- CellLabel->"In[24]:=",ExpressionUUID->"8fc9e271-e259-4c24-86ae-a87bf503f131"],
+   3.975525227334455*^9}, 3.975604612038735*^9, 3.97560504807076*^9},
+ CellLabel->"In[34]:=",ExpressionUUID->"8fc9e271-e259-4c24-86ae-a87bf503f131"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"Done running BiKymoButler\"\>"], "Print",
+ CellChangeTimes->{3.97560395973195*^9, 3.9756049788721046`*^9, 
+  3.975605303622931*^9},
+ CellLabel->
+  "During evaluation of \
+In[34]:=",ExpressionUUID->"17fc5ad6-70c2-431b-abbc-5c4b3fcf9a24"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Done running bidirectional kymobutler on \"\>", "\[InvisibleSpace]",
-    "78", "\[InvisibleSpace]", "\<\" kymographs\"\>"}],
-  SequenceForm["Done running bidirectional kymobutler on ", 78, " kymographs"],
+  RowBox[{"\<\"Failed files: \"\>", "\[InvisibleSpace]", "1"}],
+  SequenceForm["Failed files: ", 1],
   Editable->False]], "Print",
- CellChangeTimes->{3.975592377375909*^9},
+ CellChangeTimes->{3.97560395973195*^9, 3.9756049788721046`*^9, 
+  3.975605303623424*^9},
  CellLabel->
   "During evaluation of \
-In[24]:=",ExpressionUUID->"a6dd09d4-8be2-4f02-962d-b9a086f3263b"]
+In[34]:=",ExpressionUUID->"754a786c-7700-43a8-9266-3865b849a2ce"]
+}, Open  ]]
 }, Open  ]],
 
-Cell[BoxData[""], "Code",
+Cell[CellGroupData[{
+
+Cell[BoxData["allSelectedFiles"], "Code",
  CellChangeTimes->{
   3.974901182539029*^9, 3.974901404170188*^9, 3.97490151230262*^9, {
    3.974902293814825*^9, 3.974902337594329*^9}, {3.9749023902756767`*^9, 
@@ -455,9 +536,214 @@ Cell[BoxData[""], "Code",
    3.974909998974695*^9}, {3.9749157478281803`*^9, 3.9749157503648167`*^9}, 
    3.97499827168246*^9, 3.9749987705916157`*^9, 3.97517021814834*^9, 
    3.975524909511286*^9, {3.975525044040907*^9, 3.975525049537216*^9}, {
-   3.975525082797633*^9, 3.975525085315669*^9}, 
-   3.9755923814959106`*^9},ExpressionUUID->"7dd2d715-47a8-4290-b207-\
-cd93dbe115cb"],
+   3.975525082797633*^9, 3.975525085315669*^9}, 3.9755923814959106`*^9, {
+   3.975600003500387*^9, 3.975600005175156*^9}, 3.975600952908094*^9, {
+   3.975606059117247*^9, 3.9756060620092278`*^9}},
+ CellLabel->"In[50]:=",ExpressionUUID->"7dd2d715-47a8-4290-b207-cd93dbe115cb"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_0_len_100_raw.png\"\>\
+", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_104_len_92_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_105_len_106_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_10_len_221_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_12_len_144_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_17_len_91_raw.png\"\>\
+", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_19_len_92_raw.png\"\>\
+", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_1_len_107_raw.png\"\>\
+", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_20_len_139_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_26_len_497_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_27_len_101_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_2_len_137_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_30_len_97_raw.png\"\>\
+", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_32_len_294_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_36_len_116_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_43_len_146_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_44_len_136_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_47_len_125_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_48_len_153_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_4_len_158_raw.png\"\>\
+", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_54_len_341_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_55_len_94_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_57_len_153_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_59_len_203_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_60_len_135_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_63_len_244_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_71_len_153_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_72_len_102_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_75_len_167_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_78_len_245_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_79_len_140_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_81_len_131_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_82_len_120_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_88_len_105_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_89_len_167_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B06/kymo_95_len_105_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_0_len_106_raw.png\"\>\
+", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_101_len_132_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_104_len_92_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_107_len_130_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_117_len_136_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_11_len_150_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_120_len_115_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_124_len_171_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_125_len_106_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_138_len_104_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_141_len_134_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_150_len_149_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_159_len_130_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_160_len_152_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_161_len_389_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_163_len_101_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_164_len_101_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_174_len_128_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_176_len_91_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_180_len_126_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_183_len_116_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_185_len_172_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_187_len_104_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_188_len_122_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_18_len_138_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_191_len_97_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_194_len_94_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_1_len_99_raw.png\"\>\
+", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_21_len_154_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_28_len_168_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_29_len_186_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_3_len_155_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_42_len_118_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_46_len_164_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_49_len_97_raw.png\"\>\
+", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_51_len_148_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_61_len_126_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_63_len_195_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_78_len_96_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_79_len_91_raw.png\"\>\
+", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_80_len_110_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_83_len_190_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_89_len_121_raw.png\"\
+\>", ",", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/raw/B07/kymo_91_len_153_raw.png\"\>", 
+   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
+kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_9_len_91_raw.png\"\>\
+"}], "}"}]], "Output",
+ CellChangeTimes->{3.975606063148624*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"ec1bd983-cadb-404c-84a2-877e2edf1c93"]
+}, Open  ]],
 
 Cell[BoxData[""], "Code",
  CellChangeTimes->{{3.97490429951071*^9, 3.97490431008808*^9}, {
@@ -482,195 +768,235 @@ Cell[BoxData[""], "Code",
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
- RowBox[{"\n", 
+Cell[BoxData[{
+ RowBox[{
   RowBox[{
+   RowBox[{"$RecursionLimit", " ", "=", " ", "4096"}], ";"}], "\n", "\n", 
+  RowBox[{"(*", " ", 
    RowBox[{
-    RowBox[{"$RecursionLimit", " ", "=", " ", "4096"}], ";"}], "\n", "\n", 
-   RowBox[{"(*", " ", 
-    RowBox[{
-    "===", "===", "===", "===", "===", "===", "===", "===", "===", "=="}], 
-    " ", "*)"}], "\n", 
-   RowBox[{"(*", " ", 
-    RowBox[{"Initialize", " ", "storage", " ", "per", " ", "well"}], "   ", 
+   "===", "===", "===", "===", "===", "===", "===", "===", "===", "=="}], " ",
     "*)"}], "\n", 
-   RowBox[{"(*", " ", 
-    RowBox[{
-    "===", "===", "===", "===", "===", "===", "===", "===", "===", "=="}], 
-    " ", "*)"}], "\n", "\n", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Initialize", " ", "storage", " ", "per", " ", "well"}], "   ", 
+   "*)"}], "\n", 
+  RowBox[{"(*", " ", 
    RowBox[{
-    RowBox[{"resultsByWell", " ", "=", " ", 
-     RowBox[{"Association", "[", "\n", "  ", 
-      RowBox[{"Table", "[", 
-       RowBox[{
-        RowBox[{"wellID", " ", "->", " ", 
-         RowBox[{"{", "}"}]}], ",", " ", 
-        RowBox[{"{", 
-         RowBox[{"wellID", ",", " ", "wellIDs"}], "}"}]}], "]"}], "\n", 
-      "]"}]}], ";"}], "\n", "\n", 
-   RowBox[{"(*", " ", 
-    RowBox[{
-    "===", "===", "===", "===", "===", "===", "===", "===", "===", "=="}], 
-    " ", "*)"}], "\n", 
-   RowBox[{"(*", " ", 
-    RowBox[{"Process", " ", "all", " ", "kymographs"}], "        ", "*)"}], 
-   "\n", 
-   RowBox[{"(*", " ", 
-    RowBox[{
-    "===", "===", "===", "===", "===", "===", "===", "===", "===", "=="}], 
-    " ", "*)"}], "\n", "\n", 
+   "===", "===", "===", "===", "===", "===", "===", "===", "===", "=="}], " ",
+    "*)"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"resultsByWell", " ", "=", " ", 
+    RowBox[{"Association", "[", "\n", "  ", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"wellID", " ", "->", " ", 
+        RowBox[{"{", "}"}]}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"wellID", ",", " ", "wellIDs"}], "}"}]}], "]"}], "\n", 
+     "]"}]}], ";"}], "\n", "\n", 
+  RowBox[{"(*", " ", 
    RowBox[{
-    RowBox[{"Do", "[", "\n", "  ", 
-     RowBox[{
-      RowBox[{"Module", "[", "\n", "    ", 
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{
-         "well", ",", " ", "fileName", ",", " ", "processed", ",", " ", 
-          "dataset", ",", " ", "labeledRows"}], "}"}], ",", "\n", "\n", 
-        "    ", 
+   "===", "===", "===", "===", "===", "===", "===", "===", "===", "=="}], " ",
+    "*)"}], "\n", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Process", " ", "all", " ", "kymographs"}], "        ", "*)"}], 
+  "\n", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "===", "===", "===", "===", "===", "===", "===", "===", "===", "=="}], " ",
+    "*)"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Do", "[", "\n", "  ", 
+    RowBox[{
+     RowBox[{"Module", "[", "\n", "    ", 
+      RowBox[{
+       RowBox[{"{", 
         RowBox[{
-         RowBox[{"well", " ", "=", " ", 
-          RowBox[{"allSelectedWells", "[", 
-           RowBox[{"[", "i", "]"}], "]"}]}], ";", "\n", "    ", 
-         RowBox[{"fileName", " ", "=", " ", 
-          RowBox[{"FileNameTake", "[", 
-           RowBox[{"allSelectedFiles", "[", 
-            RowBox[{"[", "i", "]"}], "]"}], "]"}]}], ";", "\n", "\n", "    ", 
-         
-         RowBox[{"(*", " ", 
-          RowBox[{"Process", " ", "tracks"}], " ", "*)"}], "\n", "    ", 
-         RowBox[{"processed", " ", "=", " ", 
-          RowBox[{"pprocLocal", "[", "\n", "      ", 
-           RowBox[{
-            RowBox[{"allResults", "[", 
-             RowBox[{"[", 
-              RowBox[{"i", ",", " ", 
-               RowBox[{"-", "1"}]}], "]"}], "]"}], ",", "\n", "      ", 
-            "secPerFrame", ",", "\n", "      ", "umPerPixel"}], "\n", "    ", 
-           "]"}]}], ";", "\n", "\n", "    ", 
-         RowBox[{"(*", " ", 
-          RowBox[{"Extract", " ", "numeric", " ", "table"}], " ", "*)"}], 
-         "\n", "    ", 
-         RowBox[{"dataset", " ", "=", " ", 
-          RowBox[{"Normal", "@", 
-           RowBox[{"processed", "[", 
+        "well", ",", " ", "fileName", ",", " ", "processed", ",", " ", 
+         "dataset", ",", " ", "labeledRows", ",", " ", "result"}], "}"}], ",",
+        "\n", "\n", "    ", 
+       RowBox[{"(*", " ", 
+        RowBox[{"Skip", " ", "failed", " ", "files"}], " ", "*)"}], "\n", 
+       "    ", 
+       RowBox[{
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"MemberQ", "[", 
+           RowBox[{"failedFiles", ",", " ", 
+            RowBox[{"allSelectedFiles", "[", 
+             RowBox[{"[", "i", "]"}], "]"}]}], "]"}], ",", " ", 
+          RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", "    ", 
+        RowBox[{"result", " ", "=", " ", 
+         RowBox[{"allResults", "[", 
+          RowBox[{"[", "i", "]"}], "]"}]}], ";", "\n", "\n", "    ", 
+        RowBox[{"(*", " ", 
+         RowBox[{"Extra", " ", 
+          RowBox[{"safety", ":", " ", 
+           RowBox[{"skip", " ", 
+            RowBox[{"Missing", "[", "...", "]"}], " ", "results"}]}]}], " ", 
+         "*)"}], "\n", "    ", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"MissingQ", "[", "result", "]"}], ",", " ", 
+          RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", "    ", 
+        RowBox[{"well", " ", "=", " ", 
+         RowBox[{"allSelectedWells", "[", 
+          RowBox[{"[", "i", "]"}], "]"}]}], ";", "\n", "    ", 
+        RowBox[{"fileName", " ", "=", " ", 
+         RowBox[{"FileNameTake", "[", 
+          RowBox[{"allSelectedFiles", "[", 
+           RowBox[{"[", "i", "]"}], "]"}], "]"}]}], ";", "\n", "\n", "    ", 
+        RowBox[{"(*", " ", 
+         RowBox[{"Process", " ", "tracks"}], " ", "*)"}], "\n", "    ", 
+        RowBox[{"processed", " ", "=", " ", 
+         RowBox[{"pprocLocal", "[", "\n", "      ", 
+          RowBox[{
+           RowBox[{"result", "[", 
             RowBox[{"[", 
-             RowBox[{
-              RowBox[{"-", "1"}], ",", " ", 
-              RowBox[{"2", " ", ";;"}]}], "]"}], "]"}]}]}], ";", "\n", "\n", 
+             RowBox[{"-", "1"}], "]"}], "]"}], ",", "\n", "      ", 
+           "secPerFrame", ",", "\n", "      ", "umPerPixel"}], "\n", "    ", 
+          "]"}]}], ";", "\n", "\n", "    ", 
+        RowBox[{"(*", " ", 
+         RowBox[{"Extract", " ", "numeric", " ", "table"}], " ", "*)"}], "\n",
          "    ", 
-         RowBox[{"(*", " ", 
+        RowBox[{"dataset", " ", "=", " ", 
+         RowBox[{"Normal", " ", "@", " ", 
+          RowBox[{"processed", "[", 
+           RowBox[{"[", 
+            RowBox[{
+             RowBox[{"-", "1"}], ",", " ", 
+             RowBox[{"2", " ", ";;"}]}], "]"}], "]"}]}]}], ";", "\n", "\n", 
+        "    ", 
+        RowBox[{"(*", " ", 
+         RowBox[{
+         "Remove", " ", "header", " ", "row", " ", "if", " ", "present"}], 
+         " ", "*)"}], "\n", "    ", 
+        RowBox[{"If", "[", 
+         RowBox[{
           RowBox[{
-          "Remove", " ", "header", " ", "row", " ", "if", " ", "present"}], 
-          " ", "*)"}], "\n", "    ", 
-         RowBox[{"If", "[", 
-          RowBox[{
+           RowBox[{
+            RowBox[{"Length", "[", "dataset", "]"}], " ", ">", " ", "0"}], 
+           " ", "&&", " ", 
            RowBox[{"StringQ", "[", 
             RowBox[{"dataset", "[", 
              RowBox[{"[", 
-              RowBox[{"1", ",", " ", "1"}], "]"}], "]"}], "]"}], ",", " ", 
-           RowBox[{"dataset", " ", "=", " ", 
-            RowBox[{"Rest", "[", "dataset", "]"}]}]}], "]"}], ";", "\n", "\n",
-          "    ", 
-         RowBox[{"(*", " ", 
-          RowBox[{
-           RowBox[{"Add", " ", "well"}], " ", "+", " ", "filename"}], " ", 
-          "*)"}], "\n", "    ", 
-         RowBox[{"labeledRows", " ", "=", " ", 
-          RowBox[{"Map", "[", "\n", "      ", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"Prepend", "[", 
-              RowBox[{
-               RowBox[{"Append", "[", 
-                RowBox[{"#", ",", " ", "fileName"}], "]"}], ",", " ", 
-               "well"}], "]"}], " ", "&"}], ",", "\n", "      ", "dataset"}], 
-           "\n", "    ", "]"}]}], ";", "\n", "\n", "    ", 
-         RowBox[{"(*", " ", 
-          RowBox[{
-          "Append", " ", "to", " ", "the", " ", "correct", " ", "well", " ", 
-           "bucket"}], " ", "*)"}], "\n", "    ", 
+              RowBox[{"1", ",", " ", "1"}], "]"}], "]"}], "]"}]}], ",", "\n", 
+          "      ", 
+          RowBox[{"dataset", " ", "=", " ", 
+           RowBox[{"Rest", "[", "dataset", "]"}]}]}], "\n", "    ", "]"}], ";",
+         "\n", "\n", "    ", 
+        RowBox[{"(*", " ", 
+         RowBox[{"Skip", " ", "empty", " ", "datasets"}], " ", "*)"}], "\n", 
+        "    ", 
+        RowBox[{"If", "[", 
          RowBox[{
-          RowBox[{"resultsByWell", "[", "well", "]"}], " ", "=", " ", 
-          RowBox[{"Join", "[", 
-           RowBox[{
-            RowBox[{"resultsByWell", "[", "well", "]"}], ",", " ", 
-            "labeledRows"}], "]"}]}], ";"}]}], "\n", "  ", "]"}], ",", "\n", 
-      "  ", 
-      RowBox[{"{", 
-       RowBox[{"i", ",", " ", 
-        RowBox[{"Length", "[", "allSelectedFiles", "]"}]}], "}"}]}], "\n", 
-     "]"}], ";"}], "\n", "\n", 
-   RowBox[{"(*", " ", 
-    RowBox[{
-    "===", "===", "===", "===", "===", "===", "===", "===", "===", "=="}], 
-    " ", "*)"}], "\n", 
-   RowBox[{"(*", " ", 
-    RowBox[{"Write", " ", "one", " ", "CSV", " ", "per", " ", "well"}], 
-    "        ", "*)"}], "\n", 
-   RowBox[{"(*", " ", 
-    RowBox[{
-    "===", "===", "===", "===", "===", "===", "===", "===", "===", "=="}], 
-    " ", "*)"}], "\n", "\n", 
-   RowBox[{
-    RowBox[{"header", " ", "=", " ", 
-     RowBox[{"{", "\n", "  ", 
-      RowBox[{"\"\<well_id\>\"", ",", "\n", "  ", "\"\<Direction\>\"", ",", 
-       "\n", "  ", "\"\<Velocity\>\"", ",", "\n", "  ", "\"\<Duration\>\"", ",",
-        "\n", "  ", "\"\<Distance\>\"", ",", "\n", 
-       "  ", "\"\<Instant_velocity\>\"", ",", "\n", 
-       "  ", "\"\<FileName\>\""}], "\n", "}"}]}], ";"}], "\n", "\n", 
-   RowBox[{
-    RowBox[{"Do", "[", "\n", "  ", 
-     RowBox[{
-      RowBox[{"Module", "[", "\n", "    ", 
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{"rows", ",", " ", "combinedCSV", ",", " ", "outFile"}], 
-         "}"}], ",", "\n", "\n", "    ", 
-        RowBox[{
-         RowBox[{"rows", " ", "=", " ", 
-          RowBox[{"resultsByWell", "[", "well", "]"}]}], ";", "\n", "\n", 
-         "    ", 
-         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"dataset", " ", "===", " ", 
+            RowBox[{"{", "}"}]}], " ", "||", " ", 
+           RowBox[{"!", 
+            RowBox[{"ListQ", "[", "dataset", "]"}]}]}], ",", " ", 
+          RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", "    ", 
+        RowBox[{"(*", " ", 
+         RowBox[{
+          RowBox[{"Add", " ", "well"}], " ", "+", " ", "filename"}], " ", 
+         "*)"}], "\n", "    ", 
+        RowBox[{"labeledRows", " ", "=", " ", 
+         RowBox[{"Map", "[", "\n", "      ", 
           RowBox[{
            RowBox[{
-            RowBox[{"Length", "[", "rows", "]"}], " ", "==", " ", "0"}], ",", 
-           "\n", "      ", 
-           RowBox[{
-            RowBox[{"Print", "[", 
-             
-             RowBox[{"\"\<Skipping well \>\"", ",", " ", "well", ",", 
-              " ", "\"\< (no data).\>\""}], "]"}], ";", "\n", "      ", 
-            RowBox[{"Continue", "[", "]"}], ";"}]}], "\n", "    ", "]"}], ";",
-          "\n", "\n", "    ", 
-         RowBox[{"combinedCSV", " ", "=", " ", 
-          RowBox[{"Prepend", "[", 
-           RowBox[{"rows", ",", " ", "header"}], "]"}]}], ";", "\n", "\n", 
-         "    ", 
-         RowBox[{"outFile", " ", "=", " ", 
-          RowBox[{"FileNameJoin", "[", "\n", "      ", 
-           RowBox[{"{", 
-            RowBox[{"outputDir", ",", " ", 
+            RowBox[{"Prepend", "[", 
              RowBox[{
-             "well", " ", "<>", " ", "\"\<_combined_results.csv\>\""}]}], 
-            "}"}], "\n", "    ", "]"}]}], ";", "\n", "\n", "    ", 
-         RowBox[{"Export", "[", 
+              RowBox[{"Append", "[", 
+               RowBox[{"#", ",", " ", "fileName"}], "]"}], ",", " ", "well"}],
+              "]"}], " ", "&"}], ",", "\n", "      ", "dataset"}], "\n", 
+          "    ", "]"}]}], ";", "\n", "\n", "    ", 
+        RowBox[{"(*", " ", 
+         RowBox[{
+         "Append", " ", "to", " ", "the", " ", "correct", " ", "well", " ", 
+          "bucket"}], " ", "*)"}], "\n", "    ", 
+        RowBox[{
+         RowBox[{"resultsByWell", "[", "well", "]"}], " ", "=", " ", 
+         RowBox[{"Join", "[", 
           RowBox[{
-          "outFile", ",", " ", "combinedCSV", ",", " ", "\"\<CSV\>\""}], 
-          "]"}], ";", "\n", "\n", "    ", 
-         RowBox[{"Print", "[", 
-          RowBox[{"\"\<Wrote \>\"", ",", " ", 
-           RowBox[{"Length", "[", "rows", "]"}], ",", " ", "\"\< rows to \>\"",
-            ",", " ", "outFile"}], "]"}], ";"}]}], "\n", "  ", "]"}], ",", 
-      "\n", "  ", 
-      RowBox[{"{", 
-       RowBox[{"well", ",", " ", "wellIDs"}], "}"}]}], "\n", "]"}], ";"}], 
-   "\n", "\n", 
+           RowBox[{"resultsByWell", "[", "well", "]"}], ",", " ", 
+           "labeledRows"}], "]"}]}], ";"}]}], "\n", "  ", "]"}], ",", "\n", 
+     "  ", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", " ", 
+       RowBox[{"Length", "[", "allSelectedFiles", "]"}]}], "}"}]}], "\n", 
+    "]"}], ";"}], "\n", "\n", 
+  RowBox[{"(*", " ", 
    RowBox[{
-    RowBox[{"Print", "[", "\"\<Done writing per-well CSV files.\>\"", "]"}], 
-    ";"}], "\n"}]}]], "Code",
+   "===", "===", "===", "===", "===", "===", "===", "===", "===", "=="}], " ",
+    "*)"}], "\n", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Write", " ", "one", " ", "CSV", " ", "per", " ", "well"}], 
+   "        ", "*)"}], "\n", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "===", "===", "===", "===", "===", "===", "===", "===", "===", "=="}], " ",
+    "*)"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"header", " ", "=", " ", 
+    RowBox[{"{", "\n", "  ", 
+     RowBox[{"\"\<well_id\>\"", ",", "\n", "  ", "\"\<Direction\>\"", ",", 
+      "\n", "  ", "\"\<Velocity\>\"", ",", "\n", "  ", "\"\<Duration\>\"", ",",
+       "\n", "  ", "\"\<Distance\>\"", ",", "\n", 
+      "  ", "\"\<Instant_velocity\>\"", ",", "\n", "  ", "\"\<FileName\>\""}],
+      "\n", "}"}]}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Do", "[", "\n", "  ", 
+    RowBox[{
+     RowBox[{"Module", "[", "\n", "    ", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"rows", ",", " ", "combinedCSV", ",", " ", "outFile"}], "}"}],
+        ",", "\n", "\n", "    ", 
+       RowBox[{
+        RowBox[{"rows", " ", "=", " ", 
+         RowBox[{"resultsByWell", "[", "well", "]"}]}], ";", "\n", "\n", 
+        "    ", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Length", "[", "rows", "]"}], " ", "==", " ", "0"}], ",", 
+          "\n", "      ", 
+          RowBox[{
+           RowBox[{"Print", "[", 
+            
+            RowBox[{"\"\<Skipping well \>\"", ",", " ", "well", ",", 
+             " ", "\"\< (no data).\>\""}], "]"}], ";", "\n", "      ", 
+           RowBox[{"Continue", "[", "]"}], ";"}]}], "\n", "    ", "]"}], ";", 
+        "\n", "\n", "    ", 
+        RowBox[{"combinedCSV", " ", "=", " ", 
+         RowBox[{"Prepend", "[", 
+          RowBox[{"rows", ",", " ", "header"}], "]"}]}], ";", "\n", "\n", 
+        "    ", 
+        RowBox[{"outFile", " ", "=", " ", 
+         RowBox[{"FileNameJoin", "[", "\n", "      ", 
+          RowBox[{"{", 
+           RowBox[{"outputDir", ",", " ", 
+            RowBox[{
+            "well", " ", "<>", " ", "\"\<_combined_results.csv\>\""}]}], 
+           "}"}], "\n", "    ", "]"}]}], ";", "\n", "\n", "    ", 
+        RowBox[{"Export", "[", 
+         RowBox[{
+         "outFile", ",", " ", "combinedCSV", ",", " ", "\"\<CSV\>\""}], "]"}],
+         ";", "\n", "\n", "    ", 
+        RowBox[{"Print", "[", 
+         RowBox[{"\"\<Wrote \>\"", ",", " ", 
+          RowBox[{"Length", "[", "rows", "]"}], ",", " ", "\"\< rows to \>\"",
+           ",", " ", "outFile"}], "]"}], ";"}]}], "\n", "  ", "]"}], ",", 
+     "\n", "  ", 
+     RowBox[{"{", 
+      RowBox[{"well", ",", " ", "wellIDs"}], "}"}]}], "\n", "]"}], ";"}], 
+  "\n"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", "\"\<Done writing per-well CSV files.\>\"", "]"}], 
+  ";"}], "\n"}], "Code",
  CellChangeTimes->{
   3.9749105901200857`*^9, 3.974998258840815*^9, 3.9750736461057262`*^9, {
    3.975073685585705*^9, 3.9750737097864857`*^9}, 3.975074048586532*^9, {
@@ -698,53 +1024,55 @@ Cell[BoxData[
    3.975524322729974*^9, 3.975524324315835*^9}, {3.975524575658243*^9, 
    3.975524577006419*^9}, {3.975525280102666*^9, 3.975525291437276*^9}, {
    3.9755884514586773`*^9, 3.975588452129923*^9}, {3.975589201063545*^9, 
-   3.975589208407754*^9}, 
-   3.975592496925209*^9},ExpressionUUID->"6e56728e-19b6-40d6-b515-\
-e74a082bfe4e"],
+   3.975589208407754*^9}, 3.975592496925209*^9, 3.975605880262645*^9},
+ CellLabel->"In[44]:=",ExpressionUUID->"6e56728e-19b6-40d6-b515-e74a082bfe4e"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "446", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "534", 
    "\[InvisibleSpace]", "\<\" rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/kymobutler_outputs/B02_combined_results.csv\"\
+250310_D10/processed_on_20251024/kymobutler_outputs/B06_combined_results.csv\"\
 \>"}],
   SequenceForm[
-  "Wrote ", 446, " rows to ", 
+  "Wrote ", 534, " rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250310_\
-D10/processed_on_20251024/kymobutler_outputs/B02_combined_results.csv"],
+D10/processed_on_20251024/kymobutler_outputs/B06_combined_results.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975592388402749*^9},
+ CellChangeTimes->{3.975603979534548*^9, 3.975605317397932*^9, 
+  3.975605891030032*^9},
  CellLabel->
   "During evaluation of \
-In[26]:=",ExpressionUUID->"82dfd602-76eb-45ba-b81f-320e746f3cd8"],
+In[44]:=",ExpressionUUID->"3cf85777-0d58-4c96-b390-ec57bf8e96f8"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "661", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "603", 
    "\[InvisibleSpace]", "\<\" rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/kymobutler_outputs/B03_combined_results.csv\"\
+250310_D10/processed_on_20251024/kymobutler_outputs/B07_combined_results.csv\"\
 \>"}],
   SequenceForm[
-  "Wrote ", 661, " rows to ", 
+  "Wrote ", 603, " rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250310_\
-D10/processed_on_20251024/kymobutler_outputs/B03_combined_results.csv"],
+D10/processed_on_20251024/kymobutler_outputs/B07_combined_results.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975592388480444*^9},
+ CellChangeTimes->{3.975603979534548*^9, 3.975605317397932*^9, 
+  3.9756058911361732`*^9},
  CellLabel->
   "During evaluation of \
-In[26]:=",ExpressionUUID->"1bdb8553-1113-4c68-915a-56db61b6ec81"],
+In[44]:=",ExpressionUUID->"95642dff-e5d0-4e00-b0f8-7e56ce72ed68"],
 
 Cell[BoxData["\<\"Done writing per-well CSV files.\"\>"], "Print",
- CellChangeTimes->{3.9755923884813843`*^9},
+ CellChangeTimes->{3.975603979534548*^9, 3.975605317397932*^9, 
+  3.975605891137249*^9},
  CellLabel->
   "During evaluation of \
-In[26]:=",ExpressionUUID->"e1924fd6-252c-40b4-a3f7-b18bbd90264e"]
+In[44]:=",ExpressionUUID->"886fc27d-04c4-496c-a756-d5410f254ab4"]
 }, Open  ]]
 }, Open  ]],
 
@@ -802,36 +1130,59 @@ Cell[BoxData[
        RowBox[{
         RowBox[{"{", 
          RowBox[{
-         "well", ",", " ", "fileName", ",", " ", "tracks", ",", " ", "rows"}],
-          "}"}], ",", "\n", "\n", "    ", 
+         "well", ",", " ", "fileName", ",", " ", "result", ",", " ", "tracks",
+           ",", " ", "rows"}], "}"}], ",", "\n", "\n", "    ", 
+        RowBox[{"(*", " ", 
+         RowBox[{"Skip", " ", "failed", " ", "files"}], " ", "*)"}], "\n", 
+        "    ", 
         RowBox[{
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"MemberQ", "[", 
+            RowBox[{"failedFiles", ",", " ", 
+             RowBox[{"allSelectedFiles", "[", 
+              RowBox[{"[", "i", "]"}], "]"}]}], "]"}], ",", " ", 
+           RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", "    ", 
+         RowBox[{"result", " ", "=", " ", 
+          RowBox[{"allResults", "[", 
+           RowBox[{"[", "i", "]"}], "]"}]}], ";", "\n", "\n", "    ", 
+         RowBox[{"(*", " ", 
+          RowBox[{"Skip", " ", 
+           RowBox[{"Missing", "[", "...", "]"}], " ", "or", " ", "malformed", 
+           " ", "results"}], " ", "*)"}], "\n", "    ", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"MissingQ", "[", "result", "]"}], ",", " ", 
+           RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", "    ", 
+         RowBox[{"tracks", " ", "=", " ", 
+          RowBox[{"result", "[", 
+           RowBox[{"[", 
+            RowBox[{"-", "1"}], "]"}], "]"}]}], ";", "\n", "\n", "    ", 
+         RowBox[{"(*", " ", 
+          RowBox[{"Validate", " ", "tracks"}], " ", "*)"}], "\n", "    ", 
+         RowBox[{"If", "[", "\n", "      ", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"!", 
+             RowBox[{"ListQ", "[", "tracks", "]"}]}], " ", "||", "\n", 
+            "      ", 
+            RowBox[{
+             RowBox[{"Length", "[", "tracks", "]"}], " ", "==", " ", "0"}], 
+            " ", "||", "\n", "      ", 
+            RowBox[{"!", 
+             RowBox[{"VectorQ", "[", 
+              RowBox[{"tracks", ",", " ", "ListQ"}], "]"}]}]}], ",", "\n", 
+           "      ", 
+           RowBox[{"Continue", "[", "]"}]}], "\n", "    ", "]"}], ";", "\n", 
+         "\n", "    ", 
          RowBox[{"well", " ", "=", " ", 
           RowBox[{"allSelectedWells", "[", 
            RowBox[{"[", "i", "]"}], "]"}]}], ";", "\n", "    ", 
          RowBox[{"fileName", " ", "=", " ", 
           RowBox[{"FileNameTake", "[", 
            RowBox[{"allSelectedFiles", "[", 
-            RowBox[{"[", "i", "]"}], "]"}], "]"}]}], ";", "\n", "    ", 
-         RowBox[{"tracks", " ", "=", " ", 
-          RowBox[{"allResults", "[", 
-           RowBox[{"[", 
-            RowBox[{"i", ",", " ", 
-             RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", "\n", "\n", "    ", 
-         RowBox[{"(*", " ", 
-          RowBox[{
-          "Skip", " ", "if", " ", "no", " ", "tracks", " ", "or", " ", 
-           "malformed"}], " ", "*)"}], "\n", "    ", 
-         RowBox[{"If", "[", 
-          RowBox[{
-           RowBox[{
-            RowBox[{"!", 
-             RowBox[{"ListQ", "[", "tracks", "]"}]}], " ", "||", " ", 
-            RowBox[{
-             RowBox[{"Length", "[", "tracks", "]"}], " ", "==", " ", "0"}]}], 
-           ",", "\n", "      ", 
-           RowBox[{
-            RowBox[{"Return", "[", "]"}], ";"}]}], "\n", "    ", "]"}], ";", 
-         "\n", "\n", "    ", 
+            RowBox[{"[", "i", "]"}], "]"}], "]"}]}], ";", "\n", "\n", "    ", 
+         
          RowBox[{"rows", " ", "=", "\n", "      ", 
           RowBox[{"Flatten", "[", "\n", "        ", 
            RowBox[{
@@ -842,10 +1193,12 @@ Cell[BoxData[
                 RowBox[{"{", 
                  RowBox[{"trackID", " ", "=", " ", "t"}], "}"}], ",", "\n", 
                 "            ", 
-                RowBox[{
-                 RowBox[{"(", 
+                RowBox[{"Select", "[", "\n", "              ", 
+                 RowBox[{
                   RowBox[{
-                   RowBox[{"{", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"{", 
                     RowBox[{
                     "well", ",", " ", "fileName", ",", " ", "trackID", ",", 
                     " ", 
@@ -853,15 +1206,42 @@ Cell[BoxData[
                     RowBox[{"[", "1", "]"}], "]"}], ",", " ", 
                     RowBox[{"#", "[", 
                     RowBox[{"[", "2", "]"}], "]"}]}], "}"}], " ", "&"}], 
-                  ")"}], " ", "/@", "\n", "              ", 
-                 RowBox[{"tracks", "[", 
-                  RowBox[{"[", "t", "]"}], "]"}]}]}], "\n", "          ", 
-               "]"}], ",", "\n", "          ", 
+                    ")"}], " ", "/@", "\n", "                ", 
+                   RowBox[{"tracks", "[", 
+                    RowBox[{"[", "t", "]"}], "]"}]}], ",", "\n", 
+                  "              ", 
+                  RowBox[{"(*", " ", 
+                   RowBox[{
+                    RowBox[{"Ensure", " ", "px"}], ",", " ", 
+                    RowBox[{"py", " ", "are", " ", "numeric"}]}], " ", "*)"}],
+                   "\n", "              ", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Length", "[", "#", "]"}], " ", "==", " ", "5"}], 
+                    " ", "&&", " ", 
+                    RowBox[{"NumericQ", "[", 
+                    RowBox[{"#", "[", 
+                    RowBox[{"[", "4", "]"}], "]"}], "]"}], " ", "&&", " ", 
+                    RowBox[{"NumericQ", "[", 
+                    RowBox[{"#", "[", 
+                    RowBox[{"[", "5", "]"}], "]"}], "]"}]}], ")"}], " ", 
+                   "&"}]}], "\n", "            ", "]"}]}], "\n", "          ",
+                "]"}], ",", "\n", "          ", 
               RowBox[{"{", 
                RowBox[{"t", ",", " ", 
                 RowBox[{"Length", "[", "tracks", "]"}]}], "}"}]}], "\n", 
              "        ", "]"}], ",", "\n", "        ", "1"}], "\n", "      ", 
            "]"}]}], ";", "\n", "\n", "    ", 
+         RowBox[{"(*", " ", 
+          RowBox[{"Skip", " ", "empty", " ", "row", " ", "sets"}], " ", 
+          "*)"}], "\n", "    ", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"rows", " ", "===", " ", 
+            RowBox[{"{", "}"}]}], ",", " ", 
+           RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", "    ", 
          RowBox[{"(*", " ", 
           RowBox[{"Append", " ", "to", " ", "correct", " ", "well"}], " ", 
           "*)"}], "\n", "    ", 
@@ -937,7 +1317,7 @@ Cell[BoxData[
    RowBox[{
     RowBox[{
     "Print", "[", "\"\<Done writing per-well pixel track CSV files.\>\"", 
-     "]"}], ";"}], "\n", "\n"}]}]], "Code",
+     "]"}], ";"}], "\n"}]}]], "Code",
  CellChangeTimes->{
   3.974910631528878*^9, {3.974911128684638*^9, 3.974911173773078*^9}, 
    3.974911234447707*^9, {3.974911289826839*^9, 3.974911292655067*^9}, {
@@ -950,52 +1330,52 @@ Cell[BoxData[
    3.975170187474419*^9}, {3.9755170139738407`*^9, 3.97551704133228*^9}, {
    3.975520407771566*^9, 3.975520424491939*^9}, 3.975522433900157*^9, {
    3.975591941457156*^9, 3.975591945539892*^9}, {3.975592486136385*^9, 
-   3.975592488699173*^9}},ExpressionUUID->"fb56a14c-33f3-45a9-aebc-\
-91093856ce26"],
+   3.975592488699173*^9}, {3.975606288770584*^9, 3.975606289929875*^9}},
+ CellLabel->"In[51]:=",ExpressionUUID->"fb56a14c-33f3-45a9-aebc-91093856ce26"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "31234", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "38748", 
    "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/kymobutler_outputs/B02_pixel_tracks.csv\"\>"}\
+250310_D10/processed_on_20251024/kymobutler_outputs/B06_pixel_tracks.csv\"\>"}\
 ],
   SequenceForm[
-  "Wrote ", 31234, " pixel rows to ", 
+  "Wrote ", 38748, " pixel rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250310_\
-D10/processed_on_20251024/kymobutler_outputs/B02_pixel_tracks.csv"],
+D10/processed_on_20251024/kymobutler_outputs/B06_pixel_tracks.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.9755923971066732`*^9},
+ CellChangeTimes->{3.975606293755321*^9},
  CellLabel->
   "During evaluation of \
-In[32]:=",ExpressionUUID->"9f289798-56fa-44d7-846f-76fca49003f1"],
+In[51]:=",ExpressionUUID->"29737944-26cf-439f-8ef5-f9b055747b2a"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "47332", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "40769", 
    "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/kymobutler_outputs/B03_pixel_tracks.csv\"\>"}\
+250310_D10/processed_on_20251024/kymobutler_outputs/B07_pixel_tracks.csv\"\>"}\
 ],
   SequenceForm[
-  "Wrote ", 47332, " pixel rows to ", 
+  "Wrote ", 40769, " pixel rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250310_\
-D10/processed_on_20251024/kymobutler_outputs/B03_pixel_tracks.csv"],
+D10/processed_on_20251024/kymobutler_outputs/B07_pixel_tracks.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975592397483653*^9},
+ CellChangeTimes->{3.975606294171112*^9},
  CellLabel->
   "During evaluation of \
-In[32]:=",ExpressionUUID->"0e9e776b-faea-413a-8122-da103b895cab"],
+In[51]:=",ExpressionUUID->"5fa66ed4-5bf3-4406-91c0-06304782854d"],
 
 Cell[BoxData["\<\"Done writing per-well pixel track CSV files.\"\>"], "Print",
- CellChangeTimes->{3.975592397485899*^9},
+ CellChangeTimes->{3.975606294174415*^9},
  CellLabel->
   "During evaluation of \
-In[32]:=",ExpressionUUID->"909621cf-de73-4d1d-ac37-17ec580c0be6"]
+In[51]:=",ExpressionUUID->"9c6d8561-c51d-4811-a88b-b64227852027"]
 }, Open  ]]
 }, Open  ]],
 
@@ -1034,6 +1414,8 @@ Cell[BoxData[""], "Code",
    3.974998818480179*^9},
  CellLabel->"In[42]:=",ExpressionUUID->"ad31b1ce-13f2-4018-8baf-febb971acf60"],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"\n", 
   RowBox[{
@@ -1054,65 +1436,92 @@ Cell[BoxData[
     RowBox[{"Print", "[", 
      RowBox[{"\"\<Image output directory: \>\"", ",", " ", "imageOutputDir"}],
       "]"}], ";"}], "\n", "\n", 
+   RowBox[{
+    RowBox[{"savedCount", " ", "=", " ", "0"}], ";"}], "\n", "\n", 
    RowBox[{"(*", " ", 
     RowBox[{
     "Loop", " ", "through", " ", "each", " ", "result", " ", "and", " ", 
-     "save", " ", "the", " ", "third", " ", "element", " ", "as", " ", "an", " ",
-      "image"}], " ", "*)"}], "\n", 
+     "save", " ", "overlay", " ", "images"}], " ", "*)"}], "\n", 
    RowBox[{
     RowBox[{"Do", "[", "\n", "  ", 
      RowBox[{
       RowBox[{"Module", "[", "\n", "    ", 
        RowBox[{
         RowBox[{"{", 
-         RowBox[{"thirdElement", ",", " ", "outputPath"}], "}"}], ",", "\n", 
+         RowBox[{
+         "result", ",", " ", "thirdElement", ",", " ", "outputPath", ",", " ",
+           "well", ",", " ", "fileName"}], "}"}], ",", "\n", "\n", "    ", 
+        RowBox[{"(*", " ", 
+         RowBox[{"Skip", " ", "failed", " ", "files"}], " ", "*)"}], "\n", 
         "    ", 
         RowBox[{
-         RowBox[{"thirdElement", " ", "=", " ", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"MemberQ", "[", 
+            RowBox[{"failedFiles", ",", " ", 
+             RowBox[{"allSelectedFiles", "[", 
+              RowBox[{"[", "i", "]"}], "]"}]}], "]"}], ",", " ", 
+           RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", "    ", 
+         RowBox[{"result", " ", "=", " ", 
           RowBox[{"allResults", "[", 
-           RowBox[{"[", 
-            RowBox[{"i", ",", " ", "3"}], "]"}], "]"}]}], ";", " ", 
+           RowBox[{"[", "i", "]"}], "]"}]}], ";", "\n", "\n", "    ", 
          RowBox[{"(*", " ", 
+          RowBox[{"Skip", " ", 
+           RowBox[{"Missing", " ", "/", " ", "malformed"}], " ", "results"}], 
+          " ", "*)"}], "\n", "    ", 
+         RowBox[{"If", "[", 
           RowBox[{
            RowBox[{
-           "Extract", " ", "the", " ", "third", " ", "element", " ", "of", " ", 
-            RowBox[{"the", " ", "'"}], "i"}], "-", 
-           RowBox[{
-            RowBox[{"th", "'"}], " ", "result"}]}], " ", "*)"}], "\n", "    ", 
+            RowBox[{"MissingQ", "[", "result", "]"}], " ", "||", " ", 
+            RowBox[{
+             RowBox[{"Length", "[", "result", "]"}], " ", "<", " ", "3"}]}], ",",
+            " ", 
+           RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", "    ", 
+         RowBox[{"thirdElement", " ", "=", " ", 
+          RowBox[{"result", "[", 
+           RowBox[{"[", "3", "]"}], "]"}]}], ";", "\n", "\n", "    ", 
+         RowBox[{"(*", " ", 
+          RowBox[{"Basic", " ", "sanity", " ", 
+           RowBox[{"check", ":", " ", 
+            RowBox[{
+            "must", " ", "be", " ", "exportable", " ", "as", " ", "an", " ", 
+             "image"}]}]}], " ", "*)"}], "\n", "    ", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"!", 
+            RowBox[{"ImageQ", "[", "thirdElement", "]"}]}], ",", " ", 
+           RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", "    ", 
          RowBox[{"well", " ", "=", " ", 
           RowBox[{"allSelectedWells", "[", 
-           RowBox[{"[", "i", "]"}], "]"}]}], ";", "\n", "\t", 
+           RowBox[{"[", "i", "]"}], "]"}]}], ";", "\n", "    ", 
          RowBox[{"fileName", " ", "=", " ", 
           RowBox[{"FileBaseName", "[", 
            RowBox[{"FileNameTake", "[", 
             RowBox[{"allSelectedFiles", "[", 
-             RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}]}], ";", "\n", 
-         "    ", "\n", "    ", 
+             RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}]}], ";", "\n", "\n", 
+         "    ", 
          RowBox[{"outputPath", " ", "=", " ", 
-          RowBox[{"FileNameJoin", "[", 
+          RowBox[{"FileNameJoin", "[", "\n", "      ", 
            RowBox[{"{", 
             RowBox[{"imageOutputDir", ",", " ", 
              RowBox[{
              "well", " ", "<>", " ", "\"\<_\>\"", " ", "<>", " ", "fileName", 
-              " ", "<>", " ", "\"\<_overlay.png\>\""}]}], "}"}], "]"}]}], ";",
-          "\n", "    ", "\n", "    ", 
+              " ", "<>", " ", "\"\<_overlay.png\>\""}]}], "}"}], "\n", "    ",
+            "]"}]}], ";", "\n", "\n", "    ", 
          RowBox[{"Export", "[", 
-          RowBox[{"outputPath", ",", " ", "thirdElement"}], "]"}]}]}], " ", 
-       RowBox[{"(*", " ", 
-        RowBox[{
-        "Save", " ", "the", " ", "third", " ", "element", " ", "as", " ", 
-         "an", " ", "image"}], " ", "*)"}], "\n", "  ", "]"}], ",", "\n", 
+          RowBox[{"outputPath", ",", " ", "thirdElement"}], "]"}], ";", "\n", 
+         "    ", 
+         RowBox[{"savedCount", "++"}], ";"}]}], "\n", "  ", "]"}], ",", "\n", 
       "  ", 
       RowBox[{"{", 
        RowBox[{"i", ",", " ", 
-        RowBox[{"Length", "[", "allSelectedFiles", "]"}]}], "}"}]}], " ", 
-     RowBox[{"(*", " ", 
-      RowBox[{"Iterate", " ", "over", " ", "indices"}], " ", "*)"}], "\n", 
-     "]"}], ";"}], "\n", 
-   RowBox[{"Print", "[", 
-    RowBox[{"\"\<Kymobutler results saved as PNG files for \>\"", ",", " ", 
-     RowBox[{"Length", "[", "allSelectedFiles", "]"}], ",", 
-     " ", "\"\< kymographs.\>\""}], "]"}], "\n", "\n", 
+        RowBox[{"Length", "[", "allSelectedFiles", "]"}]}], "}"}]}], "\n", 
+     "]"}], ";"}], "\n", "\n", 
+   RowBox[{
+    RowBox[{"Print", "[", "\n", "  ", 
+     RowBox[{"\"\<Kymobutler overlay images saved for \>\"", ",", "\n", "  ", 
+      "savedCount", ",", "\n", "  ", "\"\< kymographs.\>\""}], "\n", "]"}], 
+    ";"}], "\n", "\n", "\n", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{
@@ -1200,8 +1609,39 @@ Cell[BoxData[
    3.975520459224237*^9, 3.975520479166172*^9}, 3.975522931630075*^9, {
    3.9755230398569527`*^9, 3.975523118235483*^9}, {3.975523209337698*^9, 
    3.975523211158149*^9}, {3.975523385227746*^9, 3.975523386951067*^9}, {
-   3.975523547995557*^9, 3.975523615955192*^9}},
- CellLabel->"In[43]:=",ExpressionUUID->"eecfa586-c6b0-4a7b-8b91-4baf20e5dec7"]
+   3.975523547995557*^9, 3.975523615955192*^9}, 3.9756064232809763`*^9},
+ CellLabel->"In[56]:=",ExpressionUUID->"eecfa586-c6b0-4a7b-8b91-4baf20e5dec7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Image output directory: \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250310_D10/processed_on_20251024/kymobutler_outputs/overlay_images\"\>"}],
+  SequenceForm[
+  "Image output directory: ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250310_\
+D10/processed_on_20251024/kymobutler_outputs/overlay_images"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.975606437470777*^9},
+ CellLabel->
+  "During evaluation of \
+In[56]:=",ExpressionUUID->"a7b905ab-da2a-45b5-b8a6-aa9848c2dc73"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kymobutler overlay images saved for \"\>", "\[InvisibleSpace]",
+    "80", "\[InvisibleSpace]", "\<\" kymographs.\"\>"}],
+  SequenceForm["Kymobutler overlay images saved for ", 80, " kymographs."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9756064821370897`*^9},
+ CellLabel->
+  "During evaluation of \
+In[56]:=",ExpressionUUID->"aaa5b147-51d3-4fed-8463-6cb708128972"]
+}, Open  ]]
+}, Open  ]]
 },
 WindowSize->{1466, 916},
 WindowMargins->{{Automatic, -605}, {Automatic, -1093}},
@@ -1223,52 +1663,64 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[576, 22, 1607, 37, 131, "Input",ExpressionUUID->"4c09cc81-6789-4877-92cd-7752b83d4c52"],
-Cell[2186, 61, 222, 4, 23, "Print",ExpressionUUID->"c8154190-4a69-4810-8d77-4cea139a3bcd"]
+Cell[2186, 61, 222, 4, 23, "Print",ExpressionUUID->"88a70517-e922-49b8-96de-201e796feb3c"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2445, 70, 1722, 42, 258, "Code",ExpressionUUID->"102e89bc-f41f-4444-afd4-d1ee6d146d9b"],
-Cell[4170, 114, 228, 5, 23, "Print",ExpressionUUID->"4b5f433b-1be4-4654-87ee-14a0df9716ba"],
-Cell[4401, 121, 430, 11, 26, "Message",ExpressionUUID->"114c7592-974b-4781-b78f-39d6279422f6"],
+Cell[4170, 114, 230, 5, 23, "Print",ExpressionUUID->"468b4fe2-0a84-4266-8fb5-538dc2065d7b"],
+Cell[4403, 121, 432, 11, 26, "Message",ExpressionUUID->"67519a85-d013-4141-bbef-47da25932373"],
 Cell[CellGroupData[{
-Cell[4856, 136, 209, 4, 23, "Print",ExpressionUUID->"7974124d-ea4b-416d-8c1b-706e930abfd0"],
-Cell[5068, 142, 489, 12, 23, "Print",ExpressionUUID->"5b5a4130-f239-47a8-b35d-807c72621981"]
+Cell[4860, 136, 209, 4, 23, "Print",ExpressionUUID->"50415e67-7a0d-474b-a8e2-48c22ec102d9"],
+Cell[5072, 142, 491, 12, 23, "Print",ExpressionUUID->"f2486e5a-8abf-4533-9584-16d5547e6fe2"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5606, 160, 7015, 171, 937, "Code",ExpressionUUID->"dff84555-3aa1-455a-8776-d2f17fc6c998"],
+Cell[5612, 160, 7563, 181, 1050, "Code",ExpressionUUID->"dff84555-3aa1-455a-8776-d2f17fc6c998"],
 Cell[CellGroupData[{
-Cell[12646, 335, 582, 14, 23, "Print",ExpressionUUID->"c5851644-a2cf-4710-bcc1-8c8eeb9bc8f8"],
-Cell[13231, 351, 329, 8, 23, "Print",ExpressionUUID->"88b66682-69e0-42dd-8132-b9544bba5ad3"]
+Cell[13200, 345, 580, 14, 23, "Print",ExpressionUUID->"f1beb761-e888-4105-81a6-447cda9a53ed"],
+Cell[13783, 361, 329, 8, 23, "Print",ExpressionUUID->"4c75916d-2043-4a48-8199-b95d762e8745"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13609, 365, 2978, 63, 428, "Code",ExpressionUUID->"8fc9e271-e259-4c24-86ae-a87bf503f131"],
-Cell[16590, 430, 430, 9, 23, "Print",ExpressionUUID->"a6dd09d4-8be2-4f02-962d-b9a086f3263b"]
-}, Open  ]],
-Cell[17035, 442, 1131, 17, 51, "Code",ExpressionUUID->"7dd2d715-47a8-4290-b207-cd93dbe115cb"],
-Cell[18169, 461, 738, 10, 51, "Code",ExpressionUUID->"3a744eb5-64ef-40e4-9e90-04da788ac6b6"],
-Cell[18910, 473, 472, 7, 51, "Code",ExpressionUUID->"a8c8a005-c579-481c-9816-2f9b576cf2f8"],
+Cell[14161, 375, 5859, 122, 1088, "Code",ExpressionUUID->"8fc9e271-e259-4c24-86ae-a87bf503f131"],
 Cell[CellGroupData[{
-Cell[19407, 484, 9663, 218, 1672, "Code",ExpressionUUID->"6e56728e-19b6-40d6-b515-e74a082bfe4e"],
-Cell[CellGroupData[{
-Cell[29095, 706, 700, 16, 23, "Print",ExpressionUUID->"82dfd602-76eb-45ba-b81f-320e746f3cd8"],
-Cell[29798, 724, 700, 16, 23, "Print",ExpressionUUID->"1bdb8553-1113-4c68-915a-56db61b6ec81"],
-Cell[30501, 742, 215, 4, 23, "Print",ExpressionUUID->"e1924fd6-252c-40b4-a3f7-b18bbd90264e"]
+Cell[20045, 501, 254, 5, 23, "Print",ExpressionUUID->"17fc5ad6-70c2-431b-abbc-5c4b3fcf9a24"],
+Cell[20302, 508, 359, 9, 23, "Print",ExpressionUUID->"754a786c-7700-43a8-9266-3865b849a2ce"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[30765, 752, 8432, 201, 1502, "Code",ExpressionUUID->"fb56a14c-33f3-45a9-aebc-91093856ce26"],
+Cell[20710, 523, 1289, 18, 51, "Code",ExpressionUUID->"7dd2d715-47a8-4290-b207-cd93dbe115cb"],
+Cell[22002, 543, 12630, 201, 1667, "Output",ExpressionUUID->"ec1bd983-cadb-404c-84a2-877e2edf1c93"]
+}, Open  ]],
+Cell[34647, 747, 738, 10, 51, "Code",ExpressionUUID->"3a744eb5-64ef-40e4-9e90-04da788ac6b6"],
+Cell[35388, 759, 472, 7, 51, "Code",ExpressionUUID->"a8c8a005-c579-481c-9816-2f9b576cf2f8"],
 Cell[CellGroupData[{
-Cell[39222, 957, 710, 16, 23, "Print",ExpressionUUID->"9f289798-56fa-44d7-846f-76fca49003f1"],
-Cell[39935, 975, 708, 16, 23, "Print",ExpressionUUID->"0e9e776b-faea-413a-8122-da103b895cab"],
-Cell[40646, 993, 225, 4, 23, "Print",ExpressionUUID->"909621cf-de73-4d1d-ac37-17ec580c0be6"]
+Cell[35885, 770, 11168, 257, 1898, "Code",ExpressionUUID->"6e56728e-19b6-40d6-b515-e74a082bfe4e"],
+Cell[CellGroupData[{
+Cell[47078, 1031, 747, 17, 23, "Print",ExpressionUUID->"3cf85777-0d58-4c96-b390-ec57bf8e96f8"],
+Cell[47828, 1050, 749, 17, 23, "Print",ExpressionUUID->"95642dff-e5d0-4e00-b0f8-7e56ce72ed68"],
+Cell[48580, 1069, 260, 5, 23, "Print",ExpressionUUID->"886fc27d-04c4-496c-a756-d5410f254ab4"]
 }, Open  ]]
 }, Open  ]],
-Cell[40898, 1001, 369, 6, 51, "Code",ExpressionUUID->"20649f0d-ffa0-412f-8278-368a4f8257e7"],
-Cell[41270, 1009, 293, 5, 51, "Code",ExpressionUUID->"8612960f-105d-4155-9d10-6e95990fdc1b"],
-Cell[41566, 1016, 415, 6, 51, "Code",ExpressionUUID->"dfd9cc79-b3db-499b-833e-be5fb4176270"],
-Cell[41984, 1024, 671, 10, 51, "Code",ExpressionUUID->"ad31b1ce-13f2-4018-8baf-febb971acf60"],
-Cell[42658, 1036, 7334, 167, 729, "Code",ExpressionUUID->"eecfa586-c6b0-4a7b-8b91-4baf20e5dec7"]
+Cell[CellGroupData[{
+Cell[48889, 1080, 10947, 253, 1842, "Code",ExpressionUUID->"fb56a14c-33f3-45a9-aebc-91093856ce26"],
+Cell[CellGroupData[{
+Cell[59861, 1337, 708, 16, 23, "Print",ExpressionUUID->"29737944-26cf-439f-8ef5-f9b055747b2a"],
+Cell[60572, 1355, 708, 16, 23, "Print",ExpressionUUID->"5fa66ed4-5bf3-4406-91c0-06304782854d"],
+Cell[61283, 1373, 225, 4, 23, "Print",ExpressionUUID->"9c6d8561-c51d-4811-a88b-b64227852027"]
+}, Open  ]]
+}, Open  ]],
+Cell[61535, 1381, 369, 6, 51, "Code",ExpressionUUID->"20649f0d-ffa0-412f-8278-368a4f8257e7"],
+Cell[61907, 1389, 293, 5, 51, "Code",ExpressionUUID->"8612960f-105d-4155-9d10-6e95990fdc1b"],
+Cell[62203, 1396, 415, 6, 51, "Code",ExpressionUUID->"dfd9cc79-b3db-499b-833e-be5fb4176270"],
+Cell[62621, 1404, 671, 10, 51, "Code",ExpressionUUID->"ad31b1ce-13f2-4018-8baf-febb971acf60"],
+Cell[CellGroupData[{
+Cell[63317, 1418, 8584, 194, 1182, "Code",ExpressionUUID->"eecfa586-c6b0-4a7b-8b91-4baf20e5dec7"],
+Cell[CellGroupData[{
+Cell[71926, 1616, 622, 14, 23, "Print",ExpressionUUID->"a7b905ab-da2a-45b5-b8a6-aa9848c2dc73"],
+Cell[72551, 1632, 424, 9, 23, "Print",ExpressionUUID->"aaa5b147-51d3-4fed-8463-6cb708128972"]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
