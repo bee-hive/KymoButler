@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     76800,       1719]
-NotebookOptionsPosition[     73003,       1645]
-NotebookOutlinePosition[     73424,       1662]
-CellTagsIndexPosition[     73381,       1659]
+NotebookDataLength[     78471,       1850]
+NotebookOptionsPosition[     73154,       1760]
+NotebookOutlinePosition[     73575,       1777]
+CellTagsIndexPosition[     73532,       1774]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -60,10 +60,10 @@ Cell[BoxData[
  CellLabel->"In[1]:=",ExpressionUUID->"4c09cc81-6789-4877-92cd-7752b83d4c52"],
 
 Cell[BoxData["\<\"KymoButler packages loaded successfully.\"\>"], "Print",
- CellChangeTimes->{3.9756009296390247`*^9},
+ CellChangeTimes->{3.975612340299836*^9},
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"88a70517-e922-49b8-96de-201e796feb3c"]
+In[1]:=",ExpressionUUID->"f2195ed7-cd7a-4f37-b16f-b25bb8db674e"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -114,31 +114,31 @@ is correctly set up.\>\"", "]"}], ";", "\n", " ",
 
 Cell[BoxData["\<\"Loading pre-trained models on master kernel...\"\>"], \
 "Print",
- CellChangeTimes->{3.9756009356111183`*^9},
+ CellChangeTimes->{3.975612344011683*^9},
  CellLabel->
   "During evaluation of \
-In[5]:=",ExpressionUUID->"468b4fe2-0a84-4266-8fb5-538dc2065d7b"],
+In[5]:=",ExpressionUUID->"8ef4ab05-f41b-412b-824d-c09a0217e868"],
 
 Cell[BoxData[
  TemplateBox[{
   "CreateDirectory", "eexist", 
    "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"/Users/aweiner/beehive/lab/adamw/\
 KymoButler/models\\\\\\\"\\\"}]\\) already exists.\"", 2, 6, 1, 
-   29392859847926699058, "Local"},
+   29392934684332553280, "Local"},
   "MessageTemplate",
   BaseStyle->"MSG"]], "Message",
- CellChangeTimes->{3.9756009356625223`*^9},
+ CellChangeTimes->{3.975612344054359*^9},
  CellLabel->
   "During evaluation of \
-In[5]:=",ExpressionUUID->"67519a85-d013-4141-bbef-47da25932373"],
+In[5]:=",ExpressionUUID->"86dae2bd-d9c0-4c36-b876-17193ecfbafd"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData["\<\"Models loaded successfully.\"\>"], "Print",
- CellChangeTimes->{3.9756009363935013`*^9},
+ CellChangeTimes->{3.975612344443536*^9},
  CellLabel->
   "During evaluation of \
-In[5]:=",ExpressionUUID->"50415e67-7a0d-474b-a8e2-48c22ec102d9"],
+In[5]:=",ExpressionUUID->"0ca56e85-404e-493e-a834-a423520cc569"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -149,10 +149,10 @@ Cell[BoxData[
   SequenceForm[
   "Available models: ", {"binet", "classnet", "uninet", "decnet"}],
   Editable->False]], "Print",
- CellChangeTimes->{3.9756009363946457`*^9},
+ CellChangeTimes->{3.975612344444181*^9},
  CellLabel->
   "During evaluation of \
-In[5]:=",ExpressionUUID->"f2486e5a-8abf-4533-9584-16d5547e6fe2"]
+In[5]:=",ExpressionUUID->"686e82bb-bd8d-42d9-9e8e-5e6f2192d7f0"]
 }, Open  ]]
 }, Open  ]],
 
@@ -176,19 +176,12 @@ Cell[BoxData[
    RowBox[{
    "===", "===", "===", "===", "===", "===", "===", "===", "===", "=="}], " ",
     "*)"}], "\n", "\n", 
-  RowBox[{"(*", 
-   RowBox[{
-    RowBox[{
-    "baseDir", " ", "=", 
-     " ", "\"\</Users/aweiner/Documents/MFN2-project/kymobutler/processed_\
-kymographs/250310_D10/processed_on_20251024/raw\>\""}], ";"}], "*)"}], "\n", 
-  "\n", 
   RowBox[{
    RowBox[{
     RowBox[{
     "baseDir", " ", "=", 
      " ", "\"\</Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024\>\""}], ";"}], "\n", 
+kymographs/250307_D11/processed_on_20251024/\>\""}], ";"}], "\n", 
    RowBox[{
     RowBox[{"inputDir", " ", "=", " ", 
      RowBox[{"FileNameJoin", "[", 
@@ -198,7 +191,11 @@ kymographs/250310_D10/processed_on_20251024\>\""}], ";"}], "\n",
    RowBox[{
     RowBox[{"wellIDs", " ", "=", " ", 
      RowBox[{"{", 
-      RowBox[{"\"\<B06\>\"", ",", " ", "\"\<B07\>\""}], "}"}]}], ";"}], "   ", 
+      RowBox[{"\"\<B02\>\"", ",", " ", "\"\<B03\>\"", ",", " ", "\"\<B04\>\"",
+        ",", " ", "\"\<B05\>\"", ",", " ", "\"\<B06\>\"", ",", 
+       " ", "\"\<B07\>\"", ",", " ", "\"\<B08\>\"", ",", " ", "\"\<B09\>\"", ",",
+        " ", "\"\<B10\>\"", ",", " ", "\"\<B11\>\""}], "}"}]}], ";"}], "   ", 
+   
    RowBox[{"(*", " ", 
     RowBox[{"<", 
      RowBox[{
@@ -338,7 +335,11 @@ kymographs/250310_D10/processed_on_20251024\>\""}], ";"}], "\n",
    3.975588716182225*^9, 3.9755887174239492`*^9}, {3.975590934497426*^9, 
    3.9755909356096*^9}, {3.9755911027355223`*^9, 3.975591103842938*^9}, {
    3.9755995117307577`*^9, 3.975599514709248*^9}, 3.975600252285529*^9, {
-   3.975600801328064*^9, 3.975600804335446*^9}},
+   3.975600801328064*^9, 3.975600804335446*^9}, {3.975606678304501*^9, 
+   3.975606681414658*^9}, {3.975607310990123*^9, 3.975607313786498*^9}, {
+   3.975608019246385*^9, 3.975608031590468*^9}, {3.975609087006678*^9, 
+   3.975609123362071*^9}, {3.975610259528686*^9, 3.975610312760104*^9}, {
+   3.975612203596455*^9, 3.975612221267627*^9}},
  CellLabel->"In[10]:=",ExpressionUUID->"dff84555-3aa1-455a-8776-d2f17fc6c998"],
 
 Cell[CellGroupData[{
@@ -348,26 +349,26 @@ Cell[BoxData[
   RowBox[{"\<\"Output directory: \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/kymobutler_outputs\"\>"}],
+250307_D11/processed_on_20251024/kymobutler_outputs\"\>"}],
   SequenceForm[
   "Output directory: ", 
-   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250310_\
-D10/processed_on_20251024/kymobutler_outputs"],
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975600941072323*^9},
+ CellChangeTimes->{3.975612349347354*^9},
  CellLabel->
   "During evaluation of \
-In[10]:=",ExpressionUUID->"f1beb761-e888-4105-81a6-447cda9a53ed"],
+In[10]:=",ExpressionUUID->"e608dde5-8ac9-4c66-9611-5d76c2771b1b"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Total files selected: \"\>", "\[InvisibleSpace]", "81"}],
-  SequenceForm["Total files selected: ", 81],
+  RowBox[{"\<\"Total files selected: \"\>", "\[InvisibleSpace]", "569"}],
+  SequenceForm["Total files selected: ", 569],
   Editable->False]], "Print",
- CellChangeTimes->{3.975600941273532*^9},
+ CellChangeTimes->{3.975612350292976*^9},
  CellLabel->
   "During evaluation of \
-In[10]:=",ExpressionUUID->"4c75916d-2043-4a48-8199-b95d762e8745"]
+In[10]:=",ExpressionUUID->"3fa2d9b8-b74a-402b-9424-022f41b39031"]
 }, Open  ]]
 }, Open  ]],
 
@@ -495,33 +496,31 @@ Cell[BoxData[{
    3.9750769174423237`*^9}, {3.975091183951395*^9, 3.975091225093617*^9}, 
    3.9755081433166656`*^9, 3.975508272922826*^9, {3.975525173574356*^9, 
    3.975525227334455*^9}, 3.975604612038735*^9, 3.97560504807076*^9},
- CellLabel->"In[34]:=",ExpressionUUID->"8fc9e271-e259-4c24-86ae-a87bf503f131"],
+ CellLabel->"In[24]:=",ExpressionUUID->"8fc9e271-e259-4c24-86ae-a87bf503f131"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData["\<\"Done running BiKymoButler\"\>"], "Print",
- CellChangeTimes->{3.97560395973195*^9, 3.9756049788721046`*^9, 
-  3.975605303622931*^9},
+ CellChangeTimes->{3.975614131580537*^9},
  CellLabel->
   "During evaluation of \
-In[34]:=",ExpressionUUID->"17fc5ad6-70c2-431b-abbc-5c4b3fcf9a24"],
+In[24]:=",ExpressionUUID->"a0dd9759-f65e-4bf4-b20e-9a4ee5a0770a"],
 
 Cell[BoxData[
  InterpretationBox[
   RowBox[{"\<\"Failed files: \"\>", "\[InvisibleSpace]", "1"}],
   SequenceForm["Failed files: ", 1],
   Editable->False]], "Print",
- CellChangeTimes->{3.97560395973195*^9, 3.9756049788721046`*^9, 
-  3.975605303623424*^9},
+ CellChangeTimes->{3.9756141315810423`*^9},
  CellLabel->
   "During evaluation of \
-In[34]:=",ExpressionUUID->"754a786c-7700-43a8-9266-3865b849a2ce"]
+In[24]:=",ExpressionUUID->"5fe67679-8525-4890-a696-aa2206d935c3"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell[BoxData["allSelectedFiles"], "Code",
+Cell[BoxData["failedFiles"], "Code",
  CellChangeTimes->{
   3.974901182539029*^9, 3.974901404170188*^9, 3.97490151230262*^9, {
    3.974902293814825*^9, 3.974902337594329*^9}, {3.9749023902756767`*^9, 
@@ -538,211 +537,16 @@ Cell[BoxData["allSelectedFiles"], "Code",
    3.975524909511286*^9, {3.975525044040907*^9, 3.975525049537216*^9}, {
    3.975525082797633*^9, 3.975525085315669*^9}, 3.9755923814959106`*^9, {
    3.975600003500387*^9, 3.975600005175156*^9}, 3.975600952908094*^9, {
-   3.975606059117247*^9, 3.9756060620092278`*^9}},
- CellLabel->"In[50]:=",ExpressionUUID->"7dd2d715-47a8-4290-b207-cd93dbe115cb"],
+   3.975606059117247*^9, 3.9756060620092278`*^9}, 3.975608610069529*^9},
+ CellLabel->"In[28]:=",ExpressionUUID->"7dd2d715-47a8-4290-b207-cd93dbe115cb"],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_0_len_100_raw.png\"\>\
-", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_104_len_92_raw.png\"\
-\>", ",", \
+ RowBox[{"{", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_105_len_106_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_10_len_221_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_12_len_144_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_17_len_91_raw.png\"\>\
-", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_19_len_92_raw.png\"\>\
-", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_1_len_107_raw.png\"\>\
-", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_20_len_139_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_26_len_497_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_27_len_101_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_2_len_137_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_30_len_97_raw.png\"\>\
-", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_32_len_294_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_36_len_116_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_43_len_146_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_44_len_136_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_47_len_125_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_48_len_153_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_4_len_158_raw.png\"\>\
-", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_54_len_341_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_55_len_94_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_57_len_153_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_59_len_203_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_60_len_135_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_63_len_244_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_71_len_153_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_72_len_102_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_75_len_167_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_78_len_245_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_79_len_140_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_81_len_131_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_82_len_120_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_88_len_105_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B06/kymo_89_len_167_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B06/kymo_95_len_105_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_0_len_106_raw.png\"\>\
-", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_101_len_132_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_104_len_92_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_107_len_130_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_117_len_136_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_11_len_150_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_120_len_115_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_124_len_171_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_125_len_106_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_138_len_104_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_141_len_134_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_150_len_149_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_159_len_130_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_160_len_152_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_161_len_389_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_163_len_101_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_164_len_101_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_174_len_128_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_176_len_91_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_180_len_126_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_183_len_116_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_185_len_172_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_187_len_104_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_188_len_122_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_18_len_138_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_191_len_97_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_194_len_94_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_1_len_99_raw.png\"\>\
-", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_21_len_154_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_28_len_168_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_29_len_186_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_3_len_155_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_42_len_118_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_46_len_164_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_49_len_97_raw.png\"\>\
-", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_51_len_148_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_61_len_126_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_63_len_195_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_78_len_96_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_79_len_91_raw.png\"\>\
-", ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_80_len_110_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_83_len_190_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_89_len_121_raw.png\"\
-\>", ",", \
-"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/raw/B07/kymo_91_len_153_raw.png\"\>", 
-   ",", "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_\
-kymographs/250310_D10/processed_on_20251024/raw/B07/kymo_9_len_91_raw.png\"\>\
-"}], "}"}]], "Output",
- CellChangeTimes->{3.975606063148624*^9},
- CellLabel->"Out[50]=",ExpressionUUID->"ec1bd983-cadb-404c-84a2-877e2edf1c93"]
+250307_D11/processed_on_20251024/raw/B10/kymo_179_len_91_raw.png\"\>", 
+  "}"}]], "Output",
+ CellChangeTimes->{3.9756141367015467`*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"a0fb2b41-1743-4aed-8520-4d144c3aeea8"]
 }, Open  ]],
 
 Cell[BoxData[""], "Code",
@@ -1025,54 +829,195 @@ Cell[BoxData[{
    3.975524577006419*^9}, {3.975525280102666*^9, 3.975525291437276*^9}, {
    3.9755884514586773`*^9, 3.975588452129923*^9}, {3.975589201063545*^9, 
    3.975589208407754*^9}, 3.975592496925209*^9, 3.975605880262645*^9},
- CellLabel->"In[44]:=",ExpressionUUID->"6e56728e-19b6-40d6-b515-e74a082bfe4e"],
+ CellLabel->"In[29]:=",ExpressionUUID->"6e56728e-19b6-40d6-b515-e74a082bfe4e"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "534", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "512", 
    "\[InvisibleSpace]", "\<\" rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/kymobutler_outputs/B06_combined_results.csv\"\
+250307_D11/processed_on_20251024/kymobutler_outputs/B02_combined_results.csv\"\
 \>"}],
   SequenceForm[
-  "Wrote ", 534, " rows to ", 
-   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250310_\
-D10/processed_on_20251024/kymobutler_outputs/B06_combined_results.csv"],
+  "Wrote ", 512, " rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B02_combined_results.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975603979534548*^9, 3.975605317397932*^9, 
-  3.975605891030032*^9},
+ CellChangeTimes->{3.9756141542442427`*^9},
  CellLabel->
   "During evaluation of \
-In[44]:=",ExpressionUUID->"3cf85777-0d58-4c96-b390-ec57bf8e96f8"],
+In[29]:=",ExpressionUUID->"430aa04d-d92a-4842-8502-21183f168622"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "603", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "683", 
    "\[InvisibleSpace]", "\<\" rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/kymobutler_outputs/B07_combined_results.csv\"\
+250307_D11/processed_on_20251024/kymobutler_outputs/B03_combined_results.csv\"\
 \>"}],
   SequenceForm[
-  "Wrote ", 603, " rows to ", 
-   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250310_\
-D10/processed_on_20251024/kymobutler_outputs/B07_combined_results.csv"],
+  "Wrote ", 683, " rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B03_combined_results.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975603979534548*^9, 3.975605317397932*^9, 
-  3.9756058911361732`*^9},
+ CellChangeTimes->{3.975614154425852*^9},
  CellLabel->
   "During evaluation of \
-In[44]:=",ExpressionUUID->"95642dff-e5d0-4e00-b0f8-7e56ce72ed68"],
+In[29]:=",ExpressionUUID->"2b2ade41-a084-4fab-a1e1-d51e27e7af33"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "680", 
+   "\[InvisibleSpace]", "\<\" rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B04_combined_results.csv\"\
+\>"}],
+  SequenceForm[
+  "Wrote ", 680, " rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B04_combined_results.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.975614154627961*^9},
+ CellLabel->
+  "During evaluation of \
+In[29]:=",ExpressionUUID->"c2be45f1-6bf9-45b7-a732-4aef2cdc7d9a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "707", 
+   "\[InvisibleSpace]", "\<\" rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B05_combined_results.csv\"\
+\>"}],
+  SequenceForm[
+  "Wrote ", 707, " rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B05_combined_results.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.975614154842758*^9},
+ CellLabel->
+  "During evaluation of \
+In[29]:=",ExpressionUUID->"4f6917fd-e696-4e1d-8bf0-10c8dde4382a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "631", 
+   "\[InvisibleSpace]", "\<\" rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B06_combined_results.csv\"\
+\>"}],
+  SequenceForm[
+  "Wrote ", 631, " rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B06_combined_results.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9756141550210667`*^9},
+ CellLabel->
+  "During evaluation of \
+In[29]:=",ExpressionUUID->"dfe848bd-814f-4969-8b6e-0e0ca64ce76a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "702", 
+   "\[InvisibleSpace]", "\<\" rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B07_combined_results.csv\"\
+\>"}],
+  SequenceForm[
+  "Wrote ", 702, " rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B07_combined_results.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9756141552237043`*^9},
+ CellLabel->
+  "During evaluation of \
+In[29]:=",ExpressionUUID->"3af631dd-495d-40b2-bc2b-aa9d41396c1c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "762", 
+   "\[InvisibleSpace]", "\<\" rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B08_combined_results.csv\"\
+\>"}],
+  SequenceForm[
+  "Wrote ", 762, " rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B08_combined_results.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.975614155429019*^9},
+ CellLabel->
+  "During evaluation of \
+In[29]:=",ExpressionUUID->"6bea43bf-0371-47d5-b9a4-51209c5b07e1"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "704", 
+   "\[InvisibleSpace]", "\<\" rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B09_combined_results.csv\"\
+\>"}],
+  SequenceForm[
+  "Wrote ", 704, " rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B09_combined_results.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9756141556059637`*^9},
+ CellLabel->
+  "During evaluation of \
+In[29]:=",ExpressionUUID->"661a867e-852d-45d1-a483-9091202e7ecf"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "735", 
+   "\[InvisibleSpace]", "\<\" rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B10_combined_results.csv\"\
+\>"}],
+  SequenceForm[
+  "Wrote ", 735, " rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B10_combined_results.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.975614155795505*^9},
+ CellLabel->
+  "During evaluation of \
+In[29]:=",ExpressionUUID->"3508d055-31ca-4303-8938-28fdd2c87b11"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "570", 
+   "\[InvisibleSpace]", "\<\" rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B11_combined_results.csv\"\
+\>"}],
+  SequenceForm[
+  "Wrote ", 570, " rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B11_combined_results.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.975614156017404*^9},
+ CellLabel->
+  "During evaluation of \
+In[29]:=",ExpressionUUID->"03fe17fd-bc96-48f2-904b-1b05b4441570"],
 
 Cell[BoxData["\<\"Done writing per-well CSV files.\"\>"], "Print",
- CellChangeTimes->{3.975603979534548*^9, 3.975605317397932*^9, 
-  3.975605891137249*^9},
+ CellChangeTimes->{3.975614156019775*^9},
  CellLabel->
   "During evaluation of \
-In[44]:=",ExpressionUUID->"886fc27d-04c4-496c-a756-d5410f254ab4"]
+In[29]:=",ExpressionUUID->"52c8eb69-586e-4c9b-83f6-b6767436f9c5"]
 }, Open  ]]
 }, Open  ]],
 
@@ -1331,51 +1276,195 @@ Cell[BoxData[
    3.975520407771566*^9, 3.975520424491939*^9}, 3.975522433900157*^9, {
    3.975591941457156*^9, 3.975591945539892*^9}, {3.975592486136385*^9, 
    3.975592488699173*^9}, {3.975606288770584*^9, 3.975606289929875*^9}},
- CellLabel->"In[51]:=",ExpressionUUID->"fb56a14c-33f3-45a9-aebc-91093856ce26"],
+ CellLabel->"In[35]:=",ExpressionUUID->"fb56a14c-33f3-45a9-aebc-91093856ce26"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "38748", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "36063", 
    "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/kymobutler_outputs/B06_pixel_tracks.csv\"\>"}\
+250307_D11/processed_on_20251024/kymobutler_outputs/B02_pixel_tracks.csv\"\>"}\
 ],
   SequenceForm[
-  "Wrote ", 38748, " pixel rows to ", 
-   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250310_\
-D10/processed_on_20251024/kymobutler_outputs/B06_pixel_tracks.csv"],
+  "Wrote ", 36063, " pixel rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B02_pixel_tracks.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975606293755321*^9},
+ CellChangeTimes->{3.97561416294317*^9},
  CellLabel->
   "During evaluation of \
-In[51]:=",ExpressionUUID->"29737944-26cf-439f-8ef5-f9b055747b2a"],
+In[35]:=",ExpressionUUID->"2de734eb-34ab-4180-91cd-290a3bd22030"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "40769", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "48832", 
    "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/kymobutler_outputs/B07_pixel_tracks.csv\"\>"}\
+250307_D11/processed_on_20251024/kymobutler_outputs/B03_pixel_tracks.csv\"\>"}\
 ],
   SequenceForm[
-  "Wrote ", 40769, " pixel rows to ", 
-   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250310_\
-D10/processed_on_20251024/kymobutler_outputs/B07_pixel_tracks.csv"],
+  "Wrote ", 48832, " pixel rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B03_pixel_tracks.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975606294171112*^9},
+ CellChangeTimes->{3.9756141632424*^9},
  CellLabel->
   "During evaluation of \
-In[51]:=",ExpressionUUID->"5fa66ed4-5bf3-4406-91c0-06304782854d"],
+In[35]:=",ExpressionUUID->"750b72f3-c858-41b9-b0a7-b848839fbde2"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "46278", 
+   "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B04_pixel_tracks.csv\"\>"}\
+],
+  SequenceForm[
+  "Wrote ", 46278, " pixel rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B04_pixel_tracks.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.975614163533723*^9},
+ CellLabel->
+  "During evaluation of \
+In[35]:=",ExpressionUUID->"96999942-cac3-40fa-8f82-d895a5ca8302"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "50249", 
+   "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B05_pixel_tracks.csv\"\>"}\
+],
+  SequenceForm[
+  "Wrote ", 50249, " pixel rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B05_pixel_tracks.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.975614163876362*^9},
+ CellLabel->
+  "During evaluation of \
+In[35]:=",ExpressionUUID->"a482f2c8-6175-4164-934d-e3d0c52d91dd"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "44256", 
+   "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B06_pixel_tracks.csv\"\>"}\
+],
+  SequenceForm[
+  "Wrote ", 44256, " pixel rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B06_pixel_tracks.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9756141641928062`*^9},
+ CellLabel->
+  "During evaluation of \
+In[35]:=",ExpressionUUID->"52802eaf-d405-4339-8b35-fe319d63fd5e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "48073", 
+   "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B07_pixel_tracks.csv\"\>"}\
+],
+  SequenceForm[
+  "Wrote ", 48073, " pixel rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B07_pixel_tracks.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.975614164536083*^9},
+ CellLabel->
+  "During evaluation of \
+In[35]:=",ExpressionUUID->"1d410e4e-e0a2-4d52-85f3-87cc70f9297b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "51948", 
+   "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B08_pixel_tracks.csv\"\>"}\
+],
+  SequenceForm[
+  "Wrote ", 51948, " pixel rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B08_pixel_tracks.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9756141648959303`*^9},
+ CellLabel->
+  "During evaluation of \
+In[35]:=",ExpressionUUID->"bd21aaae-b2e9-4818-87e6-bbe2677806ea"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "47324", 
+   "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B09_pixel_tracks.csv\"\>"}\
+],
+  SequenceForm[
+  "Wrote ", 47324, " pixel rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B09_pixel_tracks.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.975614165291419*^9},
+ CellLabel->
+  "During evaluation of \
+In[35]:=",ExpressionUUID->"cec26620-7b3f-473d-9c3b-42ed6496d707"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "49470", 
+   "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B10_pixel_tracks.csv\"\>"}\
+],
+  SequenceForm[
+  "Wrote ", 49470, " pixel rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B10_pixel_tracks.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9756141655989857`*^9},
+ CellLabel->
+  "During evaluation of \
+In[35]:=",ExpressionUUID->"c8a78043-0079-4bc7-9dd5-1be618bd071b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "41449", 
+   "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
+250307_D11/processed_on_20251024/kymobutler_outputs/B11_pixel_tracks.csv\"\>"}\
+],
+  SequenceForm[
+  "Wrote ", 41449, " pixel rows to ", 
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/B11_pixel_tracks.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.975614165923848*^9},
+ CellLabel->
+  "During evaluation of \
+In[35]:=",ExpressionUUID->"772c2449-b230-48ee-a470-d899ee7c7f0f"],
 
 Cell[BoxData["\<\"Done writing per-well pixel track CSV files.\"\>"], "Print",
- CellChangeTimes->{3.975606294174415*^9},
+ CellChangeTimes->{3.975614165926323*^9},
  CellLabel->
   "During evaluation of \
-In[51]:=",ExpressionUUID->"9c6d8561-c51d-4811-a88b-b64227852027"]
+In[35]:=",ExpressionUUID->"841e1eab-2a82-41d8-872a-4a7a3f7a4b01"]
 }, Open  ]]
 }, Open  ]],
 
@@ -1416,187 +1505,212 @@ Cell[BoxData[""], "Code",
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
- RowBox[{"\n", 
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"imageOutputDir", " ", "=", " ", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{"outputDir", ",", " ", "\"\<overlay_images\>\""}], "}"}], 
+    "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"!", 
+     RowBox[{"DirectoryQ", "[", "imageOutputDir", "]"}]}], ",", " ", 
+    RowBox[{"CreateDirectory", "[", "imageOutputDir", "]"}]}], "]"}], ";"}], "\n", 
+ RowBox[{
   RowBox[{
+   RowBox[{"Print", "[", 
+    RowBox[{"\"\<Image output directory: \>\"", ",", " ", "imageOutputDir"}], 
+    "]"}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{"savedCount", " ", "=", " ", "0"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"currentIndex", " ", "=", " ", "0"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"nTotal", " ", "=", " ", 
+    RowBox[{"Length", "[", "allSelectedFiles", "]"}]}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Monitor", "[", "\n", "  ", 
+    RowBox[{
+     RowBox[{"Do", "[", "\n", "    ", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"currentIndex", " ", "=", " ", "i"}], ";", "\n", "\n", "    ", 
+        RowBox[{"Module", "[", "\n", "      ", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+           "result", ",", " ", "thirdElement", ",", " ", "outputPath", ",", 
+            " ", "well", ",", " ", "fileName"}], "}"}], ",", "\n", "\n", 
+          "      ", 
+          RowBox[{"(*", " ", 
+           RowBox[{"Skip", " ", "failed", " ", "files"}], " ", "*)"}], "\n", 
+          "      ", 
+          RowBox[{
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{"MemberQ", "[", 
+              RowBox[{"failedFiles", ",", " ", 
+               RowBox[{"allSelectedFiles", "[", 
+                RowBox[{"[", "i", "]"}], "]"}]}], "]"}], ",", " ", 
+             RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", 
+           "      ", 
+           RowBox[{"result", " ", "=", " ", 
+            RowBox[{"allResults", "[", 
+             RowBox[{"[", "i", "]"}], "]"}]}], ";", "\n", "\n", "      ", 
+           RowBox[{"(*", " ", 
+            RowBox[{"Skip", " ", 
+             RowBox[{"Missing", " ", "/", " ", "malformed"}], " ", 
+             "results"}], " ", "*)"}], "\n", "      ", 
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"MissingQ", "[", "result", "]"}], " ", "||", " ", 
+              RowBox[{
+               RowBox[{"Length", "[", "result", "]"}], " ", "<", " ", "3"}]}],
+              ",", " ", 
+             RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", 
+           "      ", 
+           RowBox[{"thirdElement", " ", "=", " ", 
+            RowBox[{"result", "[", 
+             RowBox[{"[", "3", "]"}], "]"}]}], ";", "\n", "\n", "      ", 
+           RowBox[{"(*", " ", 
+            RowBox[{"Ensure", " ", "exportable", " ", "image"}], " ", "*)"}], 
+           "\n", "      ", 
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{"!", 
+              RowBox[{"ImageQ", "[", "thirdElement", "]"}]}], ",", " ", 
+             RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", 
+           "      ", 
+           RowBox[{"well", " ", "=", " ", 
+            RowBox[{"allSelectedWells", "[", 
+             RowBox[{"[", "i", "]"}], "]"}]}], ";", "\n", "      ", 
+           RowBox[{"fileName", " ", "=", " ", 
+            RowBox[{"FileBaseName", "[", 
+             RowBox[{"FileNameTake", "[", 
+              RowBox[{"allSelectedFiles", "[", 
+               RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}]}], ";", "\n", 
+           "\n", "      ", 
+           RowBox[{"outputPath", " ", "=", " ", 
+            RowBox[{"FileNameJoin", "[", "\n", "        ", 
+             RowBox[{"{", 
+              RowBox[{"imageOutputDir", ",", " ", 
+               RowBox[{
+               "well", " ", "<>", " ", "\"\<_\>\"", " ", "<>", " ", 
+                "fileName", " ", "<>", " ", "\"\<_overlay.png\>\""}]}], "}"}],
+              "\n", "      ", "]"}]}], ";", "\n", "\n", "      ", 
+           RowBox[{"Export", "[", 
+            RowBox[{"outputPath", ",", " ", "thirdElement"}], "]"}], ";", 
+           "\n", "      ", 
+           RowBox[{"savedCount", "++"}], ";"}]}], "\n", "    ", "]"}]}], ",", 
+       "\n", "    ", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", " ", "nTotal"}], "}"}]}], "\n", "  ", "]"}], ",", 
+     "\n", "  ", 
+     RowBox[{"Column", "[", 
+      RowBox[{"{", "\n", "    ", 
+       RowBox[{"\"\<Saving overlay images...\>\"", ",", "\n", "    ", 
+        RowBox[{"ProgressIndicator", "[", 
+         RowBox[{"currentIndex", ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", " ", "nTotal"}], "}"}]}], "]"}], ",", "\n", 
+        "    ", 
+        RowBox[{"Row", "[", 
+         RowBox[{"{", "\n", "      ", 
+          
+          RowBox[{"\"\<Processed: \>\"", ",", " ", "currentIndex", ",", 
+           " ", "\"\< / \>\"", ",", " ", "nTotal", ",", "\n", 
+           "      ", "\"\<   Saved: \>\"", ",", " ", "savedCount", ",", "\n", 
+           "      ", "\"\<   Skipped: \>\"", ",", " ", 
+           RowBox[{
+           "currentIndex", " ", "-", " ", "savedCount", " ", "-", " ", 
+            "1"}]}], "\n", "    ", "}"}], "]"}]}], "\n", "  ", "}"}], "]"}]}],
+     "\n", "]"}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Print", "[", "\n", "  ", 
+    RowBox[{"\"\<Kymobutler overlay images saved for \>\"", ",", "\n", "  ", 
+     "savedCount", ",", "\n", "  ", "\"\< kymographs.\>\""}], "\n", "]"}], 
+   ";"}], "\n", "\n", "\n"}], "\n", 
+ RowBox[{
+  RowBox[{"(*", 
    RowBox[{
-    RowBox[{"imageOutputDir", " ", "=", " ", 
-     RowBox[{"FileNameJoin", "[", 
-      RowBox[{"{", 
-       RowBox[{"outputDir", ",", " ", "\"\<overlay_images\>\""}], "}"}], 
-      "]"}]}], ";"}], "\n", 
-   RowBox[{
+    RowBox[{
+    "outputDirectory", " ", "=", 
+     " ", "\"\</Users/lepstein/KymoButler/kym_res\>\""}], ";", " ", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "Replace", " ", "with", " ", "your", " ", "output", " ", "folder"}], " ",
+      "*)"}], "\n", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "Ensure", " ", "the", " ", "output", " ", "directory", " ", "exists"}], 
+     " ", "*)"}], "\n", 
     RowBox[{"If", "[", 
      RowBox[{
-      RowBox[{"!", 
-       RowBox[{"DirectoryQ", "[", "imageOutputDir", "]"}]}], ",", " ", 
-      RowBox[{"CreateDirectory", "[", "imageOutputDir", "]"}]}], "]"}], ";"}],
-    "\n", 
-   RowBox[{
-    RowBox[{"Print", "[", 
-     RowBox[{"\"\<Image output directory: \>\"", ",", " ", "imageOutputDir"}],
-      "]"}], ";"}], "\n", "\n", 
-   RowBox[{
-    RowBox[{"savedCount", " ", "=", " ", "0"}], ";"}], "\n", "\n", 
-   RowBox[{"(*", " ", 
-    RowBox[{
-    "Loop", " ", "through", " ", "each", " ", "result", " ", "and", " ", 
-     "save", " ", "overlay", " ", "images"}], " ", "*)"}], "\n", 
-   RowBox[{
+      RowBox[{"!", " ", 
+       RowBox[{"DirectoryQ", "[", "outputDirectory", "]"}]}], ",", " ", 
+      RowBox[{"CreateDirectory", "[", "outputDirectory", "]"}]}], "]"}], ";", 
+    "\n", "\n", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "Loop", " ", "through", " ", "each", " ", "result", " ", "and", " ", 
+      "save", " ", "the", " ", "third", " ", "element", " ", "as", " ", "a", " ",
+       "text", " ", "file"}], " ", "*)"}], "\n", 
     RowBox[{"Do", "[", "\n", "  ", 
      RowBox[{
       RowBox[{"Module", "[", "\n", "    ", 
        RowBox[{
         RowBox[{"{", 
-         RowBox[{
-         "result", ",", " ", "thirdElement", ",", " ", "outputPath", ",", " ",
-           "well", ",", " ", "fileName"}], "}"}], ",", "\n", "\n", "    ", 
-        RowBox[{"(*", " ", 
-         RowBox[{"Skip", " ", "failed", " ", "files"}], " ", "*)"}], "\n", 
+         RowBox[{"thirdElement", ",", " ", "outputPath"}], "}"}], ",", "\n", 
         "    ", 
         RowBox[{
-         RowBox[{"If", "[", 
-          RowBox[{
-           RowBox[{"MemberQ", "[", 
-            RowBox[{"failedFiles", ",", " ", 
-             RowBox[{"allSelectedFiles", "[", 
-              RowBox[{"[", "i", "]"}], "]"}]}], "]"}], ",", " ", 
-           RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", "    ", 
-         RowBox[{"result", " ", "=", " ", 
-          RowBox[{"allResults", "[", 
-           RowBox[{"[", "i", "]"}], "]"}]}], ";", "\n", "\n", "    ", 
+         RowBox[{"thirdElement", " ", "=", " ", 
+          RowBox[{"results", "[", 
+           RowBox[{"[", 
+            RowBox[{"i", ",", " ", "3"}], "]"}], "]"}]}], ";", " ", 
          RowBox[{"(*", " ", 
-          RowBox[{"Skip", " ", 
-           RowBox[{"Missing", " ", "/", " ", "malformed"}], " ", "results"}], 
-          " ", "*)"}], "\n", "    ", 
-         RowBox[{"If", "[", 
           RowBox[{
            RowBox[{
-            RowBox[{"MissingQ", "[", "result", "]"}], " ", "||", " ", 
-            RowBox[{
-             RowBox[{"Length", "[", "result", "]"}], " ", "<", " ", "3"}]}], ",",
-            " ", 
-           RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", "    ", 
-         RowBox[{"thirdElement", " ", "=", " ", 
-          RowBox[{"result", "[", 
-           RowBox[{"[", "3", "]"}], "]"}]}], ";", "\n", "\n", "    ", 
-         RowBox[{"(*", " ", 
-          RowBox[{"Basic", " ", "sanity", " ", 
-           RowBox[{"check", ":", " ", 
-            RowBox[{
-            "must", " ", "be", " ", "exportable", " ", "as", " ", "an", " ", 
-             "image"}]}]}], " ", "*)"}], "\n", "    ", 
-         RowBox[{"If", "[", 
-          RowBox[{
-           RowBox[{"!", 
-            RowBox[{"ImageQ", "[", "thirdElement", "]"}]}], ",", " ", 
-           RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\n", "\n", "    ", 
-         RowBox[{"well", " ", "=", " ", 
-          RowBox[{"allSelectedWells", "[", 
-           RowBox[{"[", "i", "]"}], "]"}]}], ";", "\n", "    ", 
-         RowBox[{"fileName", " ", "=", " ", 
-          RowBox[{"FileBaseName", "[", 
-           RowBox[{"FileNameTake", "[", 
-            RowBox[{"allSelectedFiles", "[", 
-             RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}]}], ";", "\n", "\n", 
-         "    ", 
+           "Extract", " ", "the", " ", "third", " ", "element", " ", "of", " ", 
+            RowBox[{"the", " ", "'"}], "i"}], "-", 
+           RowBox[{
+            RowBox[{"th", "'"}], " ", "result"}]}], " ", "*)"}], "\n", "    ",
+          "\n", "    ", 
          RowBox[{"outputPath", " ", "=", " ", 
-          RowBox[{"FileNameJoin", "[", "\n", "      ", 
+          RowBox[{"FileNameJoin", "[", 
            RowBox[{"{", 
-            RowBox[{"imageOutputDir", ",", " ", 
-             RowBox[{
-             "well", " ", "<>", " ", "\"\<_\>\"", " ", "<>", " ", "fileName", 
-              " ", "<>", " ", "\"\<_overlay.png\>\""}]}], "}"}], "\n", "    ",
-            "]"}]}], ";", "\n", "\n", "    ", 
+            RowBox[{"outputDirectory", ",", " ", 
+             RowBox[{"\"\<result_\>\"", " ", "<>", " ", 
+              RowBox[{"ToString", "[", 
+               RowBox[{"FileBaseName", "[", 
+                RowBox[{"selectedFiles", "[", 
+                 RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], " ", "<>", 
+              " ", "\"\<.txt\>\""}]}], "}"}], "]"}]}], ";", " ", 
+         RowBox[{"(*", " ", 
+          RowBox[{"Define", " ", "the", " ", "file", " ", "name"}], " ", 
+          "*)"}], "\n", "    ", "\n", "    ", 
          RowBox[{"Export", "[", 
-          RowBox[{"outputPath", ",", " ", "thirdElement"}], "]"}], ";", "\n", 
-         "    ", 
-         RowBox[{"savedCount", "++"}], ";"}]}], "\n", "  ", "]"}], ",", "\n", 
-      "  ", 
+          RowBox[{
+          "outputPath", ",", " ", "thirdElement", ",", " ", "\"\<Text\>\""}], 
+          "]"}]}]}], " ", 
+       RowBox[{"(*", " ", 
+        RowBox[{"Save", " ", "the", " ", "third", " ", "element", " ", "as", " ", 
+         RowBox[{"a", " ", ".", "txt"}], " ", "file"}], " ", "*)"}], "\n", 
+       "  ", "]"}], ",", "\n", "  ", 
       RowBox[{"{", 
        RowBox[{"i", ",", " ", 
-        RowBox[{"Length", "[", "allSelectedFiles", "]"}]}], "}"}]}], "\n", 
-     "]"}], ";"}], "\n", "\n", 
-   RowBox[{
-    RowBox[{"Print", "[", "\n", "  ", 
-     RowBox[{"\"\<Kymobutler overlay images saved for \>\"", ",", "\n", "  ", 
-      "savedCount", ",", "\n", "  ", "\"\< kymographs.\>\""}], "\n", "]"}], 
-    ";"}], "\n", "\n", "\n", 
-   RowBox[{"(*", 
-    RowBox[{
-     RowBox[{
-     "outputDirectory", " ", "=", 
-      " ", "\"\</Users/lepstein/KymoButler/kym_res\>\""}], ";", " ", 
+        RowBox[{"Length", "[", "selectedFiles", "]"}]}], "}"}]}], " ", 
      RowBox[{"(*", " ", 
       RowBox[{
-      "Replace", " ", "with", " ", "your", " ", "output", " ", "folder"}], 
-      " ", "*)"}], "\n", 
-     RowBox[{"(*", " ", 
-      RowBox[{
-      "Ensure", " ", "the", " ", "output", " ", "directory", " ", "exists"}], 
-      " ", "*)"}], "\n", 
-     RowBox[{"If", "[", 
-      RowBox[{
-       RowBox[{"!", " ", 
-        RowBox[{"DirectoryQ", "[", "outputDirectory", "]"}]}], ",", " ", 
-       RowBox[{"CreateDirectory", "[", "outputDirectory", "]"}]}], "]"}], ";",
-      "\n", "\n", 
-     RowBox[{"(*", " ", 
-      RowBox[{
-      "Loop", " ", "through", " ", "each", " ", "result", " ", "and", " ", 
-       "save", " ", "the", " ", "third", " ", "element", " ", "as", " ", "a", 
-       " ", "text", " ", "file"}], " ", "*)"}], "\n", 
-     RowBox[{"Do", "[", "\n", "  ", 
-      RowBox[{
-       RowBox[{"Module", "[", "\n", "    ", 
-        RowBox[{
-         RowBox[{"{", 
-          RowBox[{"thirdElement", ",", " ", "outputPath"}], "}"}], ",", "\n", 
-         "    ", 
-         RowBox[{
-          RowBox[{"thirdElement", " ", "=", " ", 
-           RowBox[{"results", "[", 
-            RowBox[{"[", 
-             RowBox[{"i", ",", " ", "3"}], "]"}], "]"}]}], ";", " ", 
-          RowBox[{"(*", " ", 
-           RowBox[{
-            RowBox[{
-            "Extract", " ", "the", " ", "third", " ", "element", " ", "of", " ", 
-             RowBox[{"the", " ", "'"}], "i"}], "-", 
-            RowBox[{
-             RowBox[{"th", "'"}], " ", "result"}]}], " ", "*)"}], "\n", 
-          "    ", "\n", "    ", 
-          RowBox[{"outputPath", " ", "=", " ", 
-           RowBox[{"FileNameJoin", "[", 
-            RowBox[{"{", 
-             RowBox[{"outputDirectory", ",", " ", 
-              RowBox[{"\"\<result_\>\"", " ", "<>", " ", 
-               RowBox[{"ToString", "[", 
-                RowBox[{"FileBaseName", "[", 
-                 RowBox[{"selectedFiles", "[", 
-                  RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], " ", "<>", 
-               " ", "\"\<.txt\>\""}]}], "}"}], "]"}]}], ";", " ", 
-          RowBox[{"(*", " ", 
-           RowBox[{"Define", " ", "the", " ", "file", " ", "name"}], " ", 
-           "*)"}], "\n", "    ", "\n", "    ", 
-          RowBox[{"Export", "[", 
-           RowBox[{
-           "outputPath", ",", " ", "thirdElement", ",", " ", "\"\<Text\>\""}],
-            "]"}]}]}], " ", 
-        RowBox[{"(*", " ", 
-         RowBox[{
-         "Save", " ", "the", " ", "third", " ", "element", " ", "as", " ", 
-          RowBox[{"a", " ", ".", "txt"}], " ", "file"}], " ", "*)"}], "\n", 
-        "  ", "]"}], ",", "\n", "  ", 
-       RowBox[{"{", 
-        RowBox[{"i", ",", " ", 
-         RowBox[{"Length", "[", "selectedFiles", "]"}]}], "}"}]}], " ", 
-      RowBox[{"(*", " ", 
-       RowBox[{
-       "Iterate", " ", "over", " ", "indices", " ", "from", " ", "1", " ", 
-        "to", " ", 
-        RowBox[{"Length", "[", "results", "]"}]}], " ", "*)"}], "\n", "]"}], 
-     ";"}], "*)"}]}]}]], "Code",
+      "Iterate", " ", "over", " ", "indices", " ", "from", " ", "1", " ", 
+       "to", " ", 
+       RowBox[{"Length", "[", "results", "]"}]}], " ", "*)"}], "\n", "]"}], 
+    ";"}], "*)"}]}]}], "Code",
  CellChangeTimes->{{3.9749221481427107`*^9, 3.974922285904395*^9}, {
    3.9749237046327133`*^9, 3.97492371685952*^9}, {3.9749819744232903`*^9, 
    3.974981988035873*^9}, {3.974982059610235*^9, 3.974982088339533*^9}, {
@@ -1609,8 +1723,9 @@ Cell[BoxData[
    3.975520459224237*^9, 3.975520479166172*^9}, 3.975522931630075*^9, {
    3.9755230398569527`*^9, 3.975523118235483*^9}, {3.975523209337698*^9, 
    3.975523211158149*^9}, {3.975523385227746*^9, 3.975523386951067*^9}, {
-   3.975523547995557*^9, 3.975523615955192*^9}, 3.9756064232809763`*^9},
- CellLabel->"In[56]:=",ExpressionUUID->"eecfa586-c6b0-4a7b-8b91-4baf20e5dec7"],
+   3.975523547995557*^9, 3.975523615955192*^9}, 3.9756064232809763`*^9, 
+   3.975608834930567*^9, {3.975608956608108*^9, 3.975608957548921*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"eecfa586-c6b0-4a7b-8b91-4baf20e5dec7"],
 
 Cell[CellGroupData[{
 
@@ -1619,27 +1734,27 @@ Cell[BoxData[
   RowBox[{"\<\"Image output directory: \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
-250310_D10/processed_on_20251024/kymobutler_outputs/overlay_images\"\>"}],
+250307_D11/processed_on_20251024/kymobutler_outputs/overlay_images\"\>"}],
   SequenceForm[
   "Image output directory: ", 
-   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250310_\
-D10/processed_on_20251024/kymobutler_outputs/overlay_images"],
+   "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
+D11/processed_on_20251024/kymobutler_outputs/overlay_images"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975606437470777*^9},
+ CellChangeTimes->{3.975614171313601*^9},
  CellLabel->
   "During evaluation of \
-In[56]:=",ExpressionUUID->"a7b905ab-da2a-45b5-b8a6-aa9848c2dc73"],
+In[40]:=",ExpressionUUID->"553a1bd7-b35a-4987-97f4-14b7a00e58bc"],
 
 Cell[BoxData[
  InterpretationBox[
   RowBox[{"\<\"Kymobutler overlay images saved for \"\>", "\[InvisibleSpace]",
-    "80", "\[InvisibleSpace]", "\<\" kymographs.\"\>"}],
-  SequenceForm["Kymobutler overlay images saved for ", 80, " kymographs."],
+    "568", "\[InvisibleSpace]", "\<\" kymographs.\"\>"}],
+  SequenceForm["Kymobutler overlay images saved for ", 568, " kymographs."],
   Editable->False]], "Print",
- CellChangeTimes->{3.9756064821370897`*^9},
+ CellChangeTimes->{3.9756144031558037`*^9},
  CellLabel->
   "During evaluation of \
-In[56]:=",ExpressionUUID->"aaa5b147-51d3-4fed-8463-6cb708128972"]
+In[40]:=",ExpressionUUID->"7f037600-2c43-47ef-ae4f-63494e3839a3"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -1663,62 +1778,78 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[576, 22, 1607, 37, 131, "Input",ExpressionUUID->"4c09cc81-6789-4877-92cd-7752b83d4c52"],
-Cell[2186, 61, 222, 4, 23, "Print",ExpressionUUID->"88a70517-e922-49b8-96de-201e796feb3c"]
+Cell[2186, 61, 220, 4, 23, "Print",ExpressionUUID->"f2195ed7-cd7a-4f37-b16f-b25bb8db674e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2445, 70, 1722, 42, 258, "Code",ExpressionUUID->"102e89bc-f41f-4444-afd4-d1ee6d146d9b"],
-Cell[4170, 114, 230, 5, 23, "Print",ExpressionUUID->"468b4fe2-0a84-4266-8fb5-538dc2065d7b"],
-Cell[4403, 121, 432, 11, 26, "Message",ExpressionUUID->"67519a85-d013-4141-bbef-47da25932373"],
+Cell[2443, 70, 1722, 42, 258, "Code",ExpressionUUID->"102e89bc-f41f-4444-afd4-d1ee6d146d9b"],
+Cell[4168, 114, 228, 5, 23, "Print",ExpressionUUID->"8ef4ab05-f41b-412b-824d-c09a0217e868"],
+Cell[4399, 121, 430, 11, 26, "Message",ExpressionUUID->"86dae2bd-d9c0-4c36-b876-17193ecfbafd"],
 Cell[CellGroupData[{
-Cell[4860, 136, 209, 4, 23, "Print",ExpressionUUID->"50415e67-7a0d-474b-a8e2-48c22ec102d9"],
-Cell[5072, 142, 491, 12, 23, "Print",ExpressionUUID->"f2486e5a-8abf-4533-9584-16d5547e6fe2"]
+Cell[4854, 136, 207, 4, 23, "Print",ExpressionUUID->"0ca56e85-404e-493e-a834-a423520cc569"],
+Cell[5064, 142, 489, 12, 23, "Print",ExpressionUUID->"686e82bb-bd8d-42d9-9e8e-5e6f2192d7f0"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5612, 160, 7563, 181, 1050, "Code",ExpressionUUID->"dff84555-3aa1-455a-8776-d2f17fc6c998"],
+Cell[5602, 160, 7853, 182, 1012, "Code",ExpressionUUID->"dff84555-3aa1-455a-8776-d2f17fc6c998"],
 Cell[CellGroupData[{
-Cell[13200, 345, 580, 14, 23, "Print",ExpressionUUID->"f1beb761-e888-4105-81a6-447cda9a53ed"],
-Cell[13783, 361, 329, 8, 23, "Print",ExpressionUUID->"4c75916d-2043-4a48-8199-b95d762e8745"]
+Cell[13480, 346, 580, 14, 23, "Print",ExpressionUUID->"e608dde5-8ac9-4c66-9611-5d76c2771b1b"],
+Cell[14063, 362, 331, 8, 23, "Print",ExpressionUUID->"3fa2d9b8-b74a-402b-9424-022f41b39031"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14161, 375, 5859, 122, 1088, "Code",ExpressionUUID->"8fc9e271-e259-4c24-86ae-a87bf503f131"],
+Cell[14443, 376, 5859, 122, 1088, "Code",ExpressionUUID->"8fc9e271-e259-4c24-86ae-a87bf503f131"],
 Cell[CellGroupData[{
-Cell[20045, 501, 254, 5, 23, "Print",ExpressionUUID->"17fc5ad6-70c2-431b-abbc-5c4b3fcf9a24"],
-Cell[20302, 508, 359, 9, 23, "Print",ExpressionUUID->"754a786c-7700-43a8-9266-3865b849a2ce"]
+Cell[20327, 502, 206, 4, 23, "Print",ExpressionUUID->"a0dd9759-f65e-4bf4-b20e-9a4ee5a0770a"],
+Cell[20536, 508, 313, 8, 23, "Print",ExpressionUUID->"5fe67679-8525-4890-a696-aa2206d935c3"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20710, 523, 1289, 18, 51, "Code",ExpressionUUID->"7dd2d715-47a8-4290-b207-cd93dbe115cb"],
-Cell[22002, 543, 12630, 201, 1667, "Output",ExpressionUUID->"ec1bd983-cadb-404c-84a2-877e2edf1c93"]
+Cell[20898, 522, 1306, 18, 51, "Code",ExpressionUUID->"7dd2d715-47a8-4290-b207-cd93dbe115cb"],
+Cell[22207, 542, 318, 6, 33, "Output",ExpressionUUID->"a0fb2b41-1743-4aed-8520-4d144c3aeea8"]
 }, Open  ]],
-Cell[34647, 747, 738, 10, 51, "Code",ExpressionUUID->"3a744eb5-64ef-40e4-9e90-04da788ac6b6"],
-Cell[35388, 759, 472, 7, 51, "Code",ExpressionUUID->"a8c8a005-c579-481c-9816-2f9b576cf2f8"],
+Cell[22540, 551, 738, 10, 51, "Code",ExpressionUUID->"3a744eb5-64ef-40e4-9e90-04da788ac6b6"],
+Cell[23281, 563, 472, 7, 51, "Code",ExpressionUUID->"a8c8a005-c579-481c-9816-2f9b576cf2f8"],
 Cell[CellGroupData[{
-Cell[35885, 770, 11168, 257, 1898, "Code",ExpressionUUID->"6e56728e-19b6-40d6-b515-e74a082bfe4e"],
+Cell[23778, 574, 11168, 257, 1898, "Code",ExpressionUUID->"6e56728e-19b6-40d6-b515-e74a082bfe4e"],
 Cell[CellGroupData[{
-Cell[47078, 1031, 747, 17, 23, "Print",ExpressionUUID->"3cf85777-0d58-4c96-b390-ec57bf8e96f8"],
-Cell[47828, 1050, 749, 17, 23, "Print",ExpressionUUID->"95642dff-e5d0-4e00-b0f8-7e56ce72ed68"],
-Cell[48580, 1069, 260, 5, 23, "Print",ExpressionUUID->"886fc27d-04c4-496c-a756-d5410f254ab4"]
+Cell[34971, 835, 702, 16, 23, "Print",ExpressionUUID->"430aa04d-d92a-4842-8502-21183f168622"],
+Cell[35676, 853, 700, 16, 23, "Print",ExpressionUUID->"2b2ade41-a084-4fab-a1e1-d51e27e7af33"],
+Cell[36379, 871, 700, 16, 23, "Print",ExpressionUUID->"c2be45f1-6bf9-45b7-a732-4aef2cdc7d9a"],
+Cell[37082, 889, 700, 16, 23, "Print",ExpressionUUID->"4f6917fd-e696-4e1d-8bf0-10c8dde4382a"],
+Cell[37785, 907, 702, 16, 23, "Print",ExpressionUUID->"dfe848bd-814f-4969-8b6e-0e0ca64ce76a"],
+Cell[38490, 925, 702, 16, 23, "Print",ExpressionUUID->"3af631dd-495d-40b2-bc2b-aa9d41396c1c"],
+Cell[39195, 943, 700, 16, 23, "Print",ExpressionUUID->"6bea43bf-0371-47d5-b9a4-51209c5b07e1"],
+Cell[39898, 961, 702, 16, 23, "Print",ExpressionUUID->"661a867e-852d-45d1-a483-9091202e7ecf"],
+Cell[40603, 979, 700, 16, 23, "Print",ExpressionUUID->"3508d055-31ca-4303-8938-28fdd2c87b11"],
+Cell[41306, 997, 700, 16, 23, "Print",ExpressionUUID->"03fe17fd-bc96-48f2-904b-1b05b4441570"],
+Cell[42009, 1015, 213, 4, 23, "Print",ExpressionUUID->"52c8eb69-586e-4c9b-83f6-b6767436f9c5"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[48889, 1080, 10947, 253, 1842, "Code",ExpressionUUID->"fb56a14c-33f3-45a9-aebc-91093856ce26"],
+Cell[42271, 1025, 10947, 253, 1842, "Code",ExpressionUUID->"fb56a14c-33f3-45a9-aebc-91093856ce26"],
 Cell[CellGroupData[{
-Cell[59861, 1337, 708, 16, 23, "Print",ExpressionUUID->"29737944-26cf-439f-8ef5-f9b055747b2a"],
-Cell[60572, 1355, 708, 16, 23, "Print",ExpressionUUID->"5fa66ed4-5bf3-4406-91c0-06304782854d"],
-Cell[61283, 1373, 225, 4, 23, "Print",ExpressionUUID->"9c6d8561-c51d-4811-a88b-b64227852027"]
+Cell[53243, 1282, 707, 16, 23, "Print",ExpressionUUID->"2de734eb-34ab-4180-91cd-290a3bd22030"],
+Cell[53953, 1300, 706, 16, 23, "Print",ExpressionUUID->"750b72f3-c858-41b9-b0a7-b848839fbde2"],
+Cell[54662, 1318, 708, 16, 23, "Print",ExpressionUUID->"96999942-cac3-40fa-8f82-d895a5ca8302"],
+Cell[55373, 1336, 708, 16, 23, "Print",ExpressionUUID->"a482f2c8-6175-4164-934d-e3d0c52d91dd"],
+Cell[56084, 1354, 710, 16, 23, "Print",ExpressionUUID->"52802eaf-d405-4339-8b35-fe319d63fd5e"],
+Cell[56797, 1372, 708, 16, 23, "Print",ExpressionUUID->"1d410e4e-e0a2-4d52-85f3-87cc70f9297b"],
+Cell[57508, 1390, 710, 16, 23, "Print",ExpressionUUID->"bd21aaae-b2e9-4818-87e6-bbe2677806ea"],
+Cell[58221, 1408, 708, 16, 23, "Print",ExpressionUUID->"cec26620-7b3f-473d-9c3b-42ed6496d707"],
+Cell[58932, 1426, 710, 16, 23, "Print",ExpressionUUID->"c8a78043-0079-4bc7-9dd5-1be618bd071b"],
+Cell[59645, 1444, 708, 16, 23, "Print",ExpressionUUID->"772c2449-b230-48ee-a470-d899ee7c7f0f"],
+Cell[60356, 1462, 225, 4, 23, "Print",ExpressionUUID->"841e1eab-2a82-41d8-872a-4a7a3f7a4b01"]
 }, Open  ]]
 }, Open  ]],
-Cell[61535, 1381, 369, 6, 51, "Code",ExpressionUUID->"20649f0d-ffa0-412f-8278-368a4f8257e7"],
-Cell[61907, 1389, 293, 5, 51, "Code",ExpressionUUID->"8612960f-105d-4155-9d10-6e95990fdc1b"],
-Cell[62203, 1396, 415, 6, 51, "Code",ExpressionUUID->"dfd9cc79-b3db-499b-833e-be5fb4176270"],
-Cell[62621, 1404, 671, 10, 51, "Code",ExpressionUUID->"ad31b1ce-13f2-4018-8baf-febb971acf60"],
+Cell[60608, 1470, 369, 6, 51, "Code",ExpressionUUID->"20649f0d-ffa0-412f-8278-368a4f8257e7"],
+Cell[60980, 1478, 293, 5, 51, "Code",ExpressionUUID->"8612960f-105d-4155-9d10-6e95990fdc1b"],
+Cell[61276, 1485, 415, 6, 51, "Code",ExpressionUUID->"dfd9cc79-b3db-499b-833e-be5fb4176270"],
+Cell[61694, 1493, 671, 10, 51, "Code",ExpressionUUID->"ad31b1ce-13f2-4018-8baf-febb971acf60"],
 Cell[CellGroupData[{
-Cell[63317, 1418, 8584, 194, 1182, "Code",ExpressionUUID->"eecfa586-c6b0-4a7b-8b91-4baf20e5dec7"],
+Cell[62390, 1507, 9660, 220, 1446, "Code",ExpressionUUID->"eecfa586-c6b0-4a7b-8b91-4baf20e5dec7"],
 Cell[CellGroupData[{
-Cell[71926, 1616, 622, 14, 23, "Print",ExpressionUUID->"a7b905ab-da2a-45b5-b8a6-aa9848c2dc73"],
-Cell[72551, 1632, 424, 9, 23, "Print",ExpressionUUID->"aaa5b147-51d3-4fed-8463-6cb708128972"]
+Cell[72075, 1731, 622, 14, 23, "Print",ExpressionUUID->"553a1bd7-b35a-4987-97f4-14b7a00e58bc"],
+Cell[72700, 1747, 426, 9, 23, "Print",ExpressionUUID->"7f037600-2c43-47ef-ae4f-63494e3839a3"]
 }, Open  ]]
 }, Open  ]]
 }
