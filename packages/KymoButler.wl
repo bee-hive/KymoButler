@@ -415,7 +415,6 @@ BiKymoButlerSegment[kym_,net_,tD_]:=Module[{bool,kympreproc,pred,dim=ImageDimens
 	kympreproc=ImageAdjust@ColorConvert[ImageAdjust@RemoveAlphaChannel@kym,"Grayscale"];
 	(*ColorNegate if backgroudn white*)
 	bool=isNegated@kympreproc;
-	kympreproc=If[bool,ColorNegate@kympreproc,kympreproc];
 	(*normalize kymolines*)
 	kympreproc=normlines@kympreproc;
 	pred=net[{ImageData@ImageResize[kympreproc,16*Round@N[dim/16]]},TargetDevice->tD];

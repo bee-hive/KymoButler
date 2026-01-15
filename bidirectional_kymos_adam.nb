@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     78471,       1850]
-NotebookOptionsPosition[     73154,       1760]
-NotebookOutlinePosition[     73575,       1777]
-CellTagsIndexPosition[     73532,       1774]
+NotebookDataLength[     78766,       1854]
+NotebookOptionsPosition[     73451,       1764]
+NotebookOutlinePosition[     73869,       1781]
+CellTagsIndexPosition[     73826,       1778]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -60,10 +60,10 @@ Cell[BoxData[
  CellLabel->"In[1]:=",ExpressionUUID->"4c09cc81-6789-4877-92cd-7752b83d4c52"],
 
 Cell[BoxData["\<\"KymoButler packages loaded successfully.\"\>"], "Print",
- CellChangeTimes->{3.975612340299836*^9},
+ CellChangeTimes->{3.9774403068703117`*^9},
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"f2195ed7-cd7a-4f37-b16f-b25bb8db674e"]
+In[1]:=",ExpressionUUID->"fe5429a1-470a-4c8c-8926-3429a1e082b2"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -114,31 +114,31 @@ is correctly set up.\>\"", "]"}], ";", "\n", " ",
 
 Cell[BoxData["\<\"Loading pre-trained models on master kernel...\"\>"], \
 "Print",
- CellChangeTimes->{3.975612344011683*^9},
+ CellChangeTimes->{3.977440346987011*^9},
  CellLabel->
   "During evaluation of \
-In[5]:=",ExpressionUUID->"8ef4ab05-f41b-412b-824d-c09a0217e868"],
+In[5]:=",ExpressionUUID->"eb289e13-ae5a-45cf-a6ef-9279d965f1fc"],
 
 Cell[BoxData[
  TemplateBox[{
   "CreateDirectory", "eexist", 
    "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"/Users/aweiner/beehive/lab/adamw/\
 KymoButler/models\\\\\\\"\\\"}]\\) already exists.\"", 2, 6, 1, 
-   29392934684332553280, "Local"},
+   29404914431573806100, "Local"},
   "MessageTemplate",
   BaseStyle->"MSG"]], "Message",
- CellChangeTimes->{3.975612344054359*^9},
+ CellChangeTimes->{3.977440347034616*^9},
  CellLabel->
   "During evaluation of \
-In[5]:=",ExpressionUUID->"86dae2bd-d9c0-4c36-b876-17193ecfbafd"],
+In[5]:=",ExpressionUUID->"74f8fcad-b227-4ddb-a2cc-6c0cfbb38469"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData["\<\"Models loaded successfully.\"\>"], "Print",
- CellChangeTimes->{3.975612344443536*^9},
+ CellChangeTimes->{3.9774403474461613`*^9},
  CellLabel->
   "During evaluation of \
-In[5]:=",ExpressionUUID->"0ca56e85-404e-493e-a834-a423520cc569"],
+In[5]:=",ExpressionUUID->"2042147f-1d00-4f63-950b-5e2c5f5c39ee"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -149,10 +149,10 @@ Cell[BoxData[
   SequenceForm[
   "Available models: ", {"binet", "classnet", "uninet", "decnet"}],
   Editable->False]], "Print",
- CellChangeTimes->{3.975612344444181*^9},
+ CellChangeTimes->{3.977440347447225*^9},
  CellLabel->
   "During evaluation of \
-In[5]:=",ExpressionUUID->"686e82bb-bd8d-42d9-9e8e-5e6f2192d7f0"]
+In[5]:=",ExpressionUUID->"c2cd6774-b25b-4625-81ed-1f3596d171a6"]
 }, Open  ]]
 }, Open  ]],
 
@@ -339,7 +339,11 @@ kymographs/250307_D11/processed_on_20251024/\>\""}], ";"}], "\n",
    3.975606681414658*^9}, {3.975607310990123*^9, 3.975607313786498*^9}, {
    3.975608019246385*^9, 3.975608031590468*^9}, {3.975609087006678*^9, 
    3.975609123362071*^9}, {3.975610259528686*^9, 3.975610312760104*^9}, {
-   3.975612203596455*^9, 3.975612221267627*^9}},
+   3.975612203596455*^9, 3.975612221267627*^9}, {3.976713346420268*^9, 
+   3.976713347021957*^9}, 3.9767133967636757`*^9, {3.976713519491078*^9, 
+   3.976713521369519*^9}, {3.977433742777721*^9, 3.97743377910924*^9}, {
+   3.977437726470752*^9, 3.977437750448728*^9}, 3.977439035621538*^9, {
+   3.977440168963238*^9, 3.977440189368779*^9}},
  CellLabel->"In[10]:=",ExpressionUUID->"dff84555-3aa1-455a-8776-d2f17fc6c998"],
 
 Cell[CellGroupData[{
@@ -355,20 +359,20 @@ Cell[BoxData[
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975612349347354*^9},
+ CellChangeTimes->{3.9774403503064632`*^9},
  CellLabel->
   "During evaluation of \
-In[10]:=",ExpressionUUID->"e608dde5-8ac9-4c66-9611-5d76c2771b1b"],
+In[10]:=",ExpressionUUID->"d056de04-b23f-44bf-bb1b-2791109cff5f"],
 
 Cell[BoxData[
  InterpretationBox[
   RowBox[{"\<\"Total files selected: \"\>", "\[InvisibleSpace]", "569"}],
   SequenceForm["Total files selected: ", 569],
   Editable->False]], "Print",
- CellChangeTimes->{3.975612350292976*^9},
+ CellChangeTimes->{3.977440351406695*^9},
  CellLabel->
   "During evaluation of \
-In[10]:=",ExpressionUUID->"3fa2d9b8-b74a-402b-9424-022f41b39031"]
+In[10]:=",ExpressionUUID->"15290988-1864-459c-b7ec-ae11722884f5"]
 }, Open  ]]
 }, Open  ]],
 
@@ -501,20 +505,20 @@ Cell[BoxData[{
 Cell[CellGroupData[{
 
 Cell[BoxData["\<\"Done running BiKymoButler\"\>"], "Print",
- CellChangeTimes->{3.975614131580537*^9},
+ CellChangeTimes->{3.977441679787771*^9},
  CellLabel->
   "During evaluation of \
-In[24]:=",ExpressionUUID->"a0dd9759-f65e-4bf4-b20e-9a4ee5a0770a"],
+In[24]:=",ExpressionUUID->"e976f68f-a6f3-4ef6-94cf-22c7d7b66c95"],
 
 Cell[BoxData[
  InterpretationBox[
   RowBox[{"\<\"Failed files: \"\>", "\[InvisibleSpace]", "1"}],
   SequenceForm["Failed files: ", 1],
   Editable->False]], "Print",
- CellChangeTimes->{3.9756141315810423`*^9},
+ CellChangeTimes->{3.97744167978826*^9},
  CellLabel->
   "During evaluation of \
-In[24]:=",ExpressionUUID->"5fe67679-8525-4890-a696-aa2206d935c3"]
+In[24]:=",ExpressionUUID->"4e41f948-0cee-4c99-9210-8344ffdf9a45"]
 }, Open  ]]
 }, Open  ]],
 
@@ -545,8 +549,8 @@ Cell[BoxData[
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/raw/B10/kymo_179_len_91_raw.png\"\>", 
   "}"}]], "Output",
- CellChangeTimes->{3.9756141367015467`*^9},
- CellLabel->"Out[28]=",ExpressionUUID->"a0fb2b41-1743-4aed-8520-4d144c3aeea8"]
+ CellChangeTimes->{3.977441794294619*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"0d3c48da-b96f-4813-9d19-23faceafba6a"]
 }, Open  ]],
 
 Cell[BoxData[""], "Code",
@@ -846,28 +850,28 @@ Cell[BoxData[
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B02_combined_results.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.9756141542442427`*^9},
+ CellChangeTimes->{3.9774418095438423`*^9},
  CellLabel->
   "During evaluation of \
-In[29]:=",ExpressionUUID->"430aa04d-d92a-4842-8502-21183f168622"],
+In[29]:=",ExpressionUUID->"6448f5a8-c0b5-4cff-8e4f-bf4971123a8c"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "683", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "682", 
    "\[InvisibleSpace]", "\<\" rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/kymobutler_outputs/B03_combined_results.csv\"\
 \>"}],
   SequenceForm[
-  "Wrote ", 683, " rows to ", 
+  "Wrote ", 682, " rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B03_combined_results.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975614154425852*^9},
+ CellChangeTimes->{3.977441809652247*^9},
  CellLabel->
   "During evaluation of \
-In[29]:=",ExpressionUUID->"2b2ade41-a084-4fab-a1e1-d51e27e7af33"],
+In[29]:=",ExpressionUUID->"abe6afc9-fcf0-4ceb-b839-3e79c2a245f8"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -882,100 +886,100 @@ Cell[BoxData[
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B04_combined_results.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975614154627961*^9},
+ CellChangeTimes->{3.977441809747505*^9},
  CellLabel->
   "During evaluation of \
-In[29]:=",ExpressionUUID->"c2be45f1-6bf9-45b7-a732-4aef2cdc7d9a"],
+In[29]:=",ExpressionUUID->"69dbc7dd-66bd-4bc5-994c-ce2f9d6f90be"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "707", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "706", 
    "\[InvisibleSpace]", "\<\" rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/kymobutler_outputs/B05_combined_results.csv\"\
 \>"}],
   SequenceForm[
-  "Wrote ", 707, " rows to ", 
+  "Wrote ", 706, " rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B05_combined_results.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975614154842758*^9},
+ CellChangeTimes->{3.977441809847167*^9},
  CellLabel->
   "During evaluation of \
-In[29]:=",ExpressionUUID->"4f6917fd-e696-4e1d-8bf0-10c8dde4382a"],
+In[29]:=",ExpressionUUID->"ad8fd9a5-ff96-4e48-ac95-6febd8e26757"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "631", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "630", 
    "\[InvisibleSpace]", "\<\" rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/kymobutler_outputs/B06_combined_results.csv\"\
 \>"}],
   SequenceForm[
-  "Wrote ", 631, " rows to ", 
+  "Wrote ", 630, " rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B06_combined_results.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.9756141550210667`*^9},
+ CellChangeTimes->{3.977441809943434*^9},
  CellLabel->
   "During evaluation of \
-In[29]:=",ExpressionUUID->"dfe848bd-814f-4969-8b6e-0e0ca64ce76a"],
+In[29]:=",ExpressionUUID->"d1086ea7-05e9-435b-aa5a-02d8ee2ec5a6"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "702", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "703", 
    "\[InvisibleSpace]", "\<\" rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/kymobutler_outputs/B07_combined_results.csv\"\
 \>"}],
   SequenceForm[
-  "Wrote ", 702, " rows to ", 
+  "Wrote ", 703, " rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B07_combined_results.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.9756141552237043`*^9},
+ CellChangeTimes->{3.9774418100302277`*^9},
  CellLabel->
   "During evaluation of \
-In[29]:=",ExpressionUUID->"3af631dd-495d-40b2-bc2b-aa9d41396c1c"],
+In[29]:=",ExpressionUUID->"ee707d9f-a92d-4245-be47-8e641e833bbe"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "762", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "763", 
    "\[InvisibleSpace]", "\<\" rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/kymobutler_outputs/B08_combined_results.csv\"\
 \>"}],
   SequenceForm[
-  "Wrote ", 762, " rows to ", 
+  "Wrote ", 763, " rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B08_combined_results.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975614155429019*^9},
+ CellChangeTimes->{3.977441810115994*^9},
  CellLabel->
   "During evaluation of \
-In[29]:=",ExpressionUUID->"6bea43bf-0371-47d5-b9a4-51209c5b07e1"],
+In[29]:=",ExpressionUUID->"76953e76-70bc-4726-9802-93ad3d2cb1e6"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "704", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "711", 
    "\[InvisibleSpace]", "\<\" rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/kymobutler_outputs/B09_combined_results.csv\"\
 \>"}],
   SequenceForm[
-  "Wrote ", 704, " rows to ", 
+  "Wrote ", 711, " rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B09_combined_results.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.9756141556059637`*^9},
+ CellChangeTimes->{3.9774418101972017`*^9},
  CellLabel->
   "During evaluation of \
-In[29]:=",ExpressionUUID->"661a867e-852d-45d1-a483-9091202e7ecf"],
+In[29]:=",ExpressionUUID->"1b2477f4-8cfb-4a40-bdb9-0d1b0721acc1"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -990,34 +994,34 @@ Cell[BoxData[
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B10_combined_results.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975614155795505*^9},
+ CellChangeTimes->{3.977441810369667*^9},
  CellLabel->
   "During evaluation of \
-In[29]:=",ExpressionUUID->"3508d055-31ca-4303-8938-28fdd2c87b11"],
+In[29]:=",ExpressionUUID->"4df0c38b-0b59-4c4a-aff1-d4ecab1976e9"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "570", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "575", 
    "\[InvisibleSpace]", "\<\" rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/kymobutler_outputs/B11_combined_results.csv\"\
 \>"}],
   SequenceForm[
-  "Wrote ", 570, " rows to ", 
+  "Wrote ", 575, " rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B11_combined_results.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975614156017404*^9},
+ CellChangeTimes->{3.9774418104582367`*^9},
  CellLabel->
   "During evaluation of \
-In[29]:=",ExpressionUUID->"03fe17fd-bc96-48f2-904b-1b05b4441570"],
+In[29]:=",ExpressionUUID->"41c1b090-e62d-4e7f-b60b-3122c03f6438"],
 
 Cell[BoxData["\<\"Done writing per-well CSV files.\"\>"], "Print",
- CellChangeTimes->{3.975614156019775*^9},
+ CellChangeTimes->{3.977441810459867*^9},
  CellLabel->
   "During evaluation of \
-In[29]:=",ExpressionUUID->"52c8eb69-586e-4c9b-83f6-b6767436f9c5"]
+In[29]:=",ExpressionUUID->"a20c3cfa-4f0d-42c0-80aa-5470d4464fb9"]
 }, Open  ]]
 }, Open  ]],
 
@@ -1293,28 +1297,28 @@ Cell[BoxData[
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B02_pixel_tracks.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.97561416294317*^9},
+ CellChangeTimes->{3.977441814679995*^9},
  CellLabel->
   "During evaluation of \
-In[35]:=",ExpressionUUID->"2de734eb-34ab-4180-91cd-290a3bd22030"],
+In[35]:=",ExpressionUUID->"cfe5ecbb-4d27-472d-b095-69c5bf2566c0"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "48832", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "48844", 
    "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/kymobutler_outputs/B03_pixel_tracks.csv\"\>"}\
 ],
   SequenceForm[
-  "Wrote ", 48832, " pixel rows to ", 
+  "Wrote ", 48844, " pixel rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B03_pixel_tracks.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.9756141632424*^9},
+ CellChangeTimes->{3.977441815012184*^9},
  CellLabel->
   "During evaluation of \
-In[35]:=",ExpressionUUID->"750b72f3-c858-41b9-b0a7-b848839fbde2"],
+In[35]:=",ExpressionUUID->"fd5162ce-95ae-4011-ba88-a9dd2f23ef4a"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1329,100 +1333,100 @@ Cell[BoxData[
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B04_pixel_tracks.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975614163533723*^9},
+ CellChangeTimes->{3.977441815302259*^9},
  CellLabel->
   "During evaluation of \
-In[35]:=",ExpressionUUID->"96999942-cac3-40fa-8f82-d895a5ca8302"],
+In[35]:=",ExpressionUUID->"684ea304-ab2d-4ccb-b3c0-aafb1e8a527e"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "50249", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "50416", 
    "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/kymobutler_outputs/B05_pixel_tracks.csv\"\>"}\
 ],
   SequenceForm[
-  "Wrote ", 50249, " pixel rows to ", 
+  "Wrote ", 50416, " pixel rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B05_pixel_tracks.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975614163876362*^9},
+ CellChangeTimes->{3.9774418155768147`*^9},
  CellLabel->
   "During evaluation of \
-In[35]:=",ExpressionUUID->"a482f2c8-6175-4164-934d-e3d0c52d91dd"],
+In[35]:=",ExpressionUUID->"75817119-1624-4f26-956d-c0d0adb5a12c"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "44256", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "44223", 
    "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/kymobutler_outputs/B06_pixel_tracks.csv\"\>"}\
 ],
   SequenceForm[
-  "Wrote ", 44256, " pixel rows to ", 
+  "Wrote ", 44223, " pixel rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B06_pixel_tracks.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.9756141641928062`*^9},
+ CellChangeTimes->{3.9774418158134327`*^9},
  CellLabel->
   "During evaluation of \
-In[35]:=",ExpressionUUID->"52802eaf-d405-4339-8b35-fe319d63fd5e"],
+In[35]:=",ExpressionUUID->"f7a65cc3-5730-4ccd-927d-15118debd159"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "48073", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "48210", 
    "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/kymobutler_outputs/B07_pixel_tracks.csv\"\>"}\
 ],
   SequenceForm[
-  "Wrote ", 48073, " pixel rows to ", 
+  "Wrote ", 48210, " pixel rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B07_pixel_tracks.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975614164536083*^9},
+ CellChangeTimes->{3.977441816093915*^9},
  CellLabel->
   "During evaluation of \
-In[35]:=",ExpressionUUID->"1d410e4e-e0a2-4d52-85f3-87cc70f9297b"],
+In[35]:=",ExpressionUUID->"ab8b0206-2ef0-4d59-b11e-9d69512b2fef"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "51948", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "51979", 
    "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/kymobutler_outputs/B08_pixel_tracks.csv\"\>"}\
 ],
   SequenceForm[
-  "Wrote ", 51948, " pixel rows to ", 
+  "Wrote ", 51979, " pixel rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B08_pixel_tracks.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.9756141648959303`*^9},
+ CellChangeTimes->{3.977441816350947*^9},
  CellLabel->
   "During evaluation of \
-In[35]:=",ExpressionUUID->"bd21aaae-b2e9-4818-87e6-bbe2677806ea"],
+In[35]:=",ExpressionUUID->"9a7a8ace-0677-4868-b2f8-5c1ea7f85f57"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "47324", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "47485", 
    "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/kymobutler_outputs/B09_pixel_tracks.csv\"\>"}\
 ],
   SequenceForm[
-  "Wrote ", 47324, " pixel rows to ", 
+  "Wrote ", 47485, " pixel rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B09_pixel_tracks.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975614165291419*^9},
+ CellChangeTimes->{3.9774418165892897`*^9},
  CellLabel->
   "During evaluation of \
-In[35]:=",ExpressionUUID->"cec26620-7b3f-473d-9c3b-42ed6496d707"],
+In[35]:=",ExpressionUUID->"596d96e9-75d1-431e-8f64-faba89bcacad"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1437,34 +1441,34 @@ Cell[BoxData[
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B10_pixel_tracks.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.9756141655989857`*^9},
+ CellChangeTimes->{3.9774418168214483`*^9},
  CellLabel->
   "During evaluation of \
-In[35]:=",ExpressionUUID->"c8a78043-0079-4bc7-9dd5-1be618bd071b"],
+In[35]:=",ExpressionUUID->"86eeff21-1387-4c40-a6b4-d39a752705ff"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "41449", 
+  RowBox[{"\<\"Wrote \"\>", "\[InvisibleSpace]", "41619", 
    "\[InvisibleSpace]", "\<\" pixel rows to \"\>", 
    "\[InvisibleSpace]", \
 "\<\"/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/\
 250307_D11/processed_on_20251024/kymobutler_outputs/B11_pixel_tracks.csv\"\>"}\
 ],
   SequenceForm[
-  "Wrote ", 41449, " pixel rows to ", 
+  "Wrote ", 41619, " pixel rows to ", 
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/B11_pixel_tracks.csv"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975614165923848*^9},
+ CellChangeTimes->{3.977441817049817*^9},
  CellLabel->
   "During evaluation of \
-In[35]:=",ExpressionUUID->"772c2449-b230-48ee-a470-d899ee7c7f0f"],
+In[35]:=",ExpressionUUID->"38358ad6-b74c-4fb5-a548-4ccf1da70e83"],
 
 Cell[BoxData["\<\"Done writing per-well pixel track CSV files.\"\>"], "Print",
- CellChangeTimes->{3.975614165926323*^9},
+ CellChangeTimes->{3.977441817051257*^9},
  CellLabel->
   "During evaluation of \
-In[35]:=",ExpressionUUID->"841e1eab-2a82-41d8-872a-4a7a3f7a4b01"]
+In[35]:=",ExpressionUUID->"0fb08882-65d2-4872-8893-3e321a7a883c"]
 }, Open  ]]
 }, Open  ]],
 
@@ -1740,10 +1744,10 @@ Cell[BoxData[
    "/Users/aweiner/beehive/lab/ConklinLabMFN2Data/processed_kymographs/250307_\
 D11/processed_on_20251024/kymobutler_outputs/overlay_images"],
   Editable->False]], "Print",
- CellChangeTimes->{3.975614171313601*^9},
+ CellChangeTimes->{3.977441824463706*^9},
  CellLabel->
   "During evaluation of \
-In[40]:=",ExpressionUUID->"553a1bd7-b35a-4987-97f4-14b7a00e58bc"],
+In[40]:=",ExpressionUUID->"d4a42a97-0033-439a-86bd-59e9941db642"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1751,15 +1755,15 @@ Cell[BoxData[
     "568", "\[InvisibleSpace]", "\<\" kymographs.\"\>"}],
   SequenceForm["Kymobutler overlay images saved for ", 568, " kymographs."],
   Editable->False]], "Print",
- CellChangeTimes->{3.9756144031558037`*^9},
+ CellChangeTimes->{3.9774419987402067`*^9},
  CellLabel->
   "During evaluation of \
-In[40]:=",ExpressionUUID->"7f037600-2c43-47ef-ae4f-63494e3839a3"]
+In[40]:=",ExpressionUUID->"10c33c94-5ea2-45e1-8cf9-4a90a47a15ce"]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1466, 916},
-WindowMargins->{{Automatic, -605}, {Automatic, -1093}},
+WindowMargins->{{Automatic, 8}, {Automatic, -1057}},
 CellContext->Notebook,
 FrontEndVersion->"14.3 for Mac OS X ARM (64-bit) (July 8, 2025)",
 StyleDefinitions->"Default.nb",
@@ -1778,78 +1782,78 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[576, 22, 1607, 37, 131, "Input",ExpressionUUID->"4c09cc81-6789-4877-92cd-7752b83d4c52"],
-Cell[2186, 61, 220, 4, 23, "Print",ExpressionUUID->"f2195ed7-cd7a-4f37-b16f-b25bb8db674e"]
+Cell[2186, 61, 222, 4, 23, "Print",ExpressionUUID->"fe5429a1-470a-4c8c-8926-3429a1e082b2"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2443, 70, 1722, 42, 258, "Code",ExpressionUUID->"102e89bc-f41f-4444-afd4-d1ee6d146d9b"],
-Cell[4168, 114, 228, 5, 23, "Print",ExpressionUUID->"8ef4ab05-f41b-412b-824d-c09a0217e868"],
-Cell[4399, 121, 430, 11, 26, "Message",ExpressionUUID->"86dae2bd-d9c0-4c36-b876-17193ecfbafd"],
+Cell[2445, 70, 1722, 42, 258, "Code",ExpressionUUID->"102e89bc-f41f-4444-afd4-d1ee6d146d9b"],
+Cell[4170, 114, 228, 5, 23, "Print",ExpressionUUID->"eb289e13-ae5a-45cf-a6ef-9279d965f1fc"],
+Cell[4401, 121, 430, 11, 26, "Message",ExpressionUUID->"74f8fcad-b227-4ddb-a2cc-6c0cfbb38469"],
 Cell[CellGroupData[{
-Cell[4854, 136, 207, 4, 23, "Print",ExpressionUUID->"0ca56e85-404e-493e-a834-a423520cc569"],
-Cell[5064, 142, 489, 12, 23, "Print",ExpressionUUID->"686e82bb-bd8d-42d9-9e8e-5e6f2192d7f0"]
+Cell[4856, 136, 209, 4, 23, "Print",ExpressionUUID->"2042147f-1d00-4f63-950b-5e2c5f5c39ee"],
+Cell[5068, 142, 489, 12, 23, "Print",ExpressionUUID->"c2cd6774-b25b-4625-81ed-1f3596d171a6"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5602, 160, 7853, 182, 1012, "Code",ExpressionUUID->"dff84555-3aa1-455a-8776-d2f17fc6c998"],
+Cell[5606, 160, 8144, 186, 1012, "Code",ExpressionUUID->"dff84555-3aa1-455a-8776-d2f17fc6c998"],
 Cell[CellGroupData[{
-Cell[13480, 346, 580, 14, 23, "Print",ExpressionUUID->"e608dde5-8ac9-4c66-9611-5d76c2771b1b"],
-Cell[14063, 362, 331, 8, 23, "Print",ExpressionUUID->"3fa2d9b8-b74a-402b-9424-022f41b39031"]
+Cell[13775, 350, 582, 14, 23, "Print",ExpressionUUID->"d056de04-b23f-44bf-bb1b-2791109cff5f"],
+Cell[14360, 366, 331, 8, 23, "Print",ExpressionUUID->"15290988-1864-459c-b7ec-ae11722884f5"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14443, 376, 5859, 122, 1088, "Code",ExpressionUUID->"8fc9e271-e259-4c24-86ae-a87bf503f131"],
+Cell[14740, 380, 5859, 122, 1088, "Code",ExpressionUUID->"8fc9e271-e259-4c24-86ae-a87bf503f131"],
 Cell[CellGroupData[{
-Cell[20327, 502, 206, 4, 23, "Print",ExpressionUUID->"a0dd9759-f65e-4bf4-b20e-9a4ee5a0770a"],
-Cell[20536, 508, 313, 8, 23, "Print",ExpressionUUID->"5fe67679-8525-4890-a696-aa2206d935c3"]
+Cell[20624, 506, 206, 4, 23, "Print",ExpressionUUID->"e976f68f-a6f3-4ef6-94cf-22c7d7b66c95"],
+Cell[20833, 512, 310, 8, 23, "Print",ExpressionUUID->"4e41f948-0cee-4c99-9210-8344ffdf9a45"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20898, 522, 1306, 18, 51, "Code",ExpressionUUID->"7dd2d715-47a8-4290-b207-cd93dbe115cb"],
-Cell[22207, 542, 318, 6, 33, "Output",ExpressionUUID->"a0fb2b41-1743-4aed-8520-4d144c3aeea8"]
+Cell[21192, 526, 1306, 18, 51, "Code",ExpressionUUID->"7dd2d715-47a8-4290-b207-cd93dbe115cb"],
+Cell[22501, 546, 316, 6, 33, "Output",ExpressionUUID->"0d3c48da-b96f-4813-9d19-23faceafba6a"]
 }, Open  ]],
-Cell[22540, 551, 738, 10, 51, "Code",ExpressionUUID->"3a744eb5-64ef-40e4-9e90-04da788ac6b6"],
-Cell[23281, 563, 472, 7, 51, "Code",ExpressionUUID->"a8c8a005-c579-481c-9816-2f9b576cf2f8"],
+Cell[22832, 555, 738, 10, 51, "Code",ExpressionUUID->"3a744eb5-64ef-40e4-9e90-04da788ac6b6"],
+Cell[23573, 567, 472, 7, 51, "Code",ExpressionUUID->"a8c8a005-c579-481c-9816-2f9b576cf2f8"],
 Cell[CellGroupData[{
-Cell[23778, 574, 11168, 257, 1898, "Code",ExpressionUUID->"6e56728e-19b6-40d6-b515-e74a082bfe4e"],
+Cell[24070, 578, 11168, 257, 1898, "Code",ExpressionUUID->"6e56728e-19b6-40d6-b515-e74a082bfe4e"],
 Cell[CellGroupData[{
-Cell[34971, 835, 702, 16, 23, "Print",ExpressionUUID->"430aa04d-d92a-4842-8502-21183f168622"],
-Cell[35676, 853, 700, 16, 23, "Print",ExpressionUUID->"2b2ade41-a084-4fab-a1e1-d51e27e7af33"],
-Cell[36379, 871, 700, 16, 23, "Print",ExpressionUUID->"c2be45f1-6bf9-45b7-a732-4aef2cdc7d9a"],
-Cell[37082, 889, 700, 16, 23, "Print",ExpressionUUID->"4f6917fd-e696-4e1d-8bf0-10c8dde4382a"],
-Cell[37785, 907, 702, 16, 23, "Print",ExpressionUUID->"dfe848bd-814f-4969-8b6e-0e0ca64ce76a"],
-Cell[38490, 925, 702, 16, 23, "Print",ExpressionUUID->"3af631dd-495d-40b2-bc2b-aa9d41396c1c"],
-Cell[39195, 943, 700, 16, 23, "Print",ExpressionUUID->"6bea43bf-0371-47d5-b9a4-51209c5b07e1"],
-Cell[39898, 961, 702, 16, 23, "Print",ExpressionUUID->"661a867e-852d-45d1-a483-9091202e7ecf"],
-Cell[40603, 979, 700, 16, 23, "Print",ExpressionUUID->"3508d055-31ca-4303-8938-28fdd2c87b11"],
-Cell[41306, 997, 700, 16, 23, "Print",ExpressionUUID->"03fe17fd-bc96-48f2-904b-1b05b4441570"],
-Cell[42009, 1015, 213, 4, 23, "Print",ExpressionUUID->"52c8eb69-586e-4c9b-83f6-b6767436f9c5"]
+Cell[35263, 839, 702, 16, 23, "Print",ExpressionUUID->"6448f5a8-c0b5-4cff-8e4f-bf4971123a8c"],
+Cell[35968, 857, 700, 16, 23, "Print",ExpressionUUID->"abe6afc9-fcf0-4ceb-b839-3e79c2a245f8"],
+Cell[36671, 875, 700, 16, 23, "Print",ExpressionUUID->"69dbc7dd-66bd-4bc5-994c-ce2f9d6f90be"],
+Cell[37374, 893, 700, 16, 23, "Print",ExpressionUUID->"ad8fd9a5-ff96-4e48-ac95-6febd8e26757"],
+Cell[38077, 911, 700, 16, 23, "Print",ExpressionUUID->"d1086ea7-05e9-435b-aa5a-02d8ee2ec5a6"],
+Cell[38780, 929, 702, 16, 23, "Print",ExpressionUUID->"ee707d9f-a92d-4245-be47-8e641e833bbe"],
+Cell[39485, 947, 700, 16, 23, "Print",ExpressionUUID->"76953e76-70bc-4726-9802-93ad3d2cb1e6"],
+Cell[40188, 965, 702, 16, 23, "Print",ExpressionUUID->"1b2477f4-8cfb-4a40-bdb9-0d1b0721acc1"],
+Cell[40893, 983, 700, 16, 23, "Print",ExpressionUUID->"4df0c38b-0b59-4c4a-aff1-d4ecab1976e9"],
+Cell[41596, 1001, 702, 16, 23, "Print",ExpressionUUID->"41c1b090-e62d-4e7f-b60b-3122c03f6438"],
+Cell[42301, 1019, 213, 4, 23, "Print",ExpressionUUID->"a20c3cfa-4f0d-42c0-80aa-5470d4464fb9"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[42271, 1025, 10947, 253, 1842, "Code",ExpressionUUID->"fb56a14c-33f3-45a9-aebc-91093856ce26"],
+Cell[42563, 1029, 10947, 253, 1842, "Code",ExpressionUUID->"fb56a14c-33f3-45a9-aebc-91093856ce26"],
 Cell[CellGroupData[{
-Cell[53243, 1282, 707, 16, 23, "Print",ExpressionUUID->"2de734eb-34ab-4180-91cd-290a3bd22030"],
-Cell[53953, 1300, 706, 16, 23, "Print",ExpressionUUID->"750b72f3-c858-41b9-b0a7-b848839fbde2"],
-Cell[54662, 1318, 708, 16, 23, "Print",ExpressionUUID->"96999942-cac3-40fa-8f82-d895a5ca8302"],
-Cell[55373, 1336, 708, 16, 23, "Print",ExpressionUUID->"a482f2c8-6175-4164-934d-e3d0c52d91dd"],
-Cell[56084, 1354, 710, 16, 23, "Print",ExpressionUUID->"52802eaf-d405-4339-8b35-fe319d63fd5e"],
-Cell[56797, 1372, 708, 16, 23, "Print",ExpressionUUID->"1d410e4e-e0a2-4d52-85f3-87cc70f9297b"],
-Cell[57508, 1390, 710, 16, 23, "Print",ExpressionUUID->"bd21aaae-b2e9-4818-87e6-bbe2677806ea"],
-Cell[58221, 1408, 708, 16, 23, "Print",ExpressionUUID->"cec26620-7b3f-473d-9c3b-42ed6496d707"],
-Cell[58932, 1426, 710, 16, 23, "Print",ExpressionUUID->"c8a78043-0079-4bc7-9dd5-1be618bd071b"],
-Cell[59645, 1444, 708, 16, 23, "Print",ExpressionUUID->"772c2449-b230-48ee-a470-d899ee7c7f0f"],
-Cell[60356, 1462, 225, 4, 23, "Print",ExpressionUUID->"841e1eab-2a82-41d8-872a-4a7a3f7a4b01"]
+Cell[53535, 1286, 708, 16, 23, "Print",ExpressionUUID->"cfe5ecbb-4d27-472d-b095-69c5bf2566c0"],
+Cell[54246, 1304, 708, 16, 23, "Print",ExpressionUUID->"fd5162ce-95ae-4011-ba88-a9dd2f23ef4a"],
+Cell[54957, 1322, 708, 16, 23, "Print",ExpressionUUID->"684ea304-ab2d-4ccb-b3c0-aafb1e8a527e"],
+Cell[55668, 1340, 710, 16, 23, "Print",ExpressionUUID->"75817119-1624-4f26-956d-c0d0adb5a12c"],
+Cell[56381, 1358, 710, 16, 23, "Print",ExpressionUUID->"f7a65cc3-5730-4ccd-927d-15118debd159"],
+Cell[57094, 1376, 708, 16, 23, "Print",ExpressionUUID->"ab8b0206-2ef0-4d59-b11e-9d69512b2fef"],
+Cell[57805, 1394, 708, 16, 23, "Print",ExpressionUUID->"9a7a8ace-0677-4868-b2f8-5c1ea7f85f57"],
+Cell[58516, 1412, 710, 16, 23, "Print",ExpressionUUID->"596d96e9-75d1-431e-8f64-faba89bcacad"],
+Cell[59229, 1430, 710, 16, 23, "Print",ExpressionUUID->"86eeff21-1387-4c40-a6b4-d39a752705ff"],
+Cell[59942, 1448, 708, 16, 23, "Print",ExpressionUUID->"38358ad6-b74c-4fb5-a548-4ccf1da70e83"],
+Cell[60653, 1466, 225, 4, 23, "Print",ExpressionUUID->"0fb08882-65d2-4872-8893-3e321a7a883c"]
 }, Open  ]]
 }, Open  ]],
-Cell[60608, 1470, 369, 6, 51, "Code",ExpressionUUID->"20649f0d-ffa0-412f-8278-368a4f8257e7"],
-Cell[60980, 1478, 293, 5, 51, "Code",ExpressionUUID->"8612960f-105d-4155-9d10-6e95990fdc1b"],
-Cell[61276, 1485, 415, 6, 51, "Code",ExpressionUUID->"dfd9cc79-b3db-499b-833e-be5fb4176270"],
-Cell[61694, 1493, 671, 10, 51, "Code",ExpressionUUID->"ad31b1ce-13f2-4018-8baf-febb971acf60"],
+Cell[60905, 1474, 369, 6, 51, "Code",ExpressionUUID->"20649f0d-ffa0-412f-8278-368a4f8257e7"],
+Cell[61277, 1482, 293, 5, 51, "Code",ExpressionUUID->"8612960f-105d-4155-9d10-6e95990fdc1b"],
+Cell[61573, 1489, 415, 6, 51, "Code",ExpressionUUID->"dfd9cc79-b3db-499b-833e-be5fb4176270"],
+Cell[61991, 1497, 671, 10, 51, "Code",ExpressionUUID->"ad31b1ce-13f2-4018-8baf-febb971acf60"],
 Cell[CellGroupData[{
-Cell[62390, 1507, 9660, 220, 1446, "Code",ExpressionUUID->"eecfa586-c6b0-4a7b-8b91-4baf20e5dec7"],
+Cell[62687, 1511, 9660, 220, 1446, "Code",ExpressionUUID->"eecfa586-c6b0-4a7b-8b91-4baf20e5dec7"],
 Cell[CellGroupData[{
-Cell[72075, 1731, 622, 14, 23, "Print",ExpressionUUID->"553a1bd7-b35a-4987-97f4-14b7a00e58bc"],
-Cell[72700, 1747, 426, 9, 23, "Print",ExpressionUUID->"7f037600-2c43-47ef-ae4f-63494e3839a3"]
+Cell[72372, 1735, 622, 14, 23, "Print",ExpressionUUID->"d4a42a97-0033-439a-86bd-59e9941db642"],
+Cell[72997, 1751, 426, 9, 23, "Print",ExpressionUUID->"10c33c94-5ea2-45e1-8cf9-4a90a47a15ce"]
 }, Open  ]]
 }, Open  ]]
 }
